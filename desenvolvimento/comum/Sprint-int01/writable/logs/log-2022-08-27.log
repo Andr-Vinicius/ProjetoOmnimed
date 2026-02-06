@@ -1,0 +1,175 @@
+CRITICAL - 2022-08-27 08:55:02 --> Class "Funcionario" not found
+in APPPATH\Views\funcionarios\edit.php on line 6.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/funcionarios/edit.php', [], true)
+ 4 APPPATH\Controllers\FuncionariosController.php(33): view('/funcionarios/edit.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->editar('7')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-27 13:42:58 --> Undefined constant "App\Controllers\funcionarioModel"
+in APPPATH\Controllers\FuncionariosController.php on line 179.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-27 13:47:56 --> Undefined constant "App\Controllers\funcionarioModel"
+in APPPATH\Controllers\FuncionariosController.php on line 179.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-27 14:07:50 --> Call to undefined function App\Controllers\obterFKPorId()
+in APPPATH\Controllers\FuncionariosController.php on line 179.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar('7')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-27 14:08:14 --> Call to undefined function App\Controllers\obterFKPorId()
+in APPPATH\Controllers\FuncionariosController.php on line 179.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar('7')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-27 14:16:10 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Validation\Validation.php on line 627.
+ 1 SYSTEMPATH\Validation\Validation.php(627): strtr('required|string|min_length[8]|max_length[200]|is_unique[usuario_comum.USC_SENHA,USC_ID,{USC_ID}]', [...])
+ 2 SYSTEMPATH\Validation\Validation.php(133): CodeIgniter\Validation\Validation->fillPlaceholders([...], [...])
+ 3 SYSTEMPATH\BaseModel.php(1350): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(835): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(Object(stdClass), [...])
+ 6 APPPATH\Controllers\FuncionariosController.php(187): CodeIgniter\Model->update(Object(stdClass), Object(App\Entities\UsuarioComum))
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar('7')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-27 14:20:06 --> Object of class stdClass could not be converted to string
+in APPPATH\Models\FuncionariosModel.php on line 100.
+ 1 APPPATH\Controllers\FuncionariosController.php(179): App\Models\FuncionariosModel->obterFKPorId(7)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar('7')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-27 14:24:19 --> Object of class stdClass could not be converted to string
+in APPPATH\Models\FuncionariosModel.php on line 100.
+ 1 APPPATH\Controllers\FuncionariosController.php(179): App\Models\FuncionariosModel->obterFKPorId(7)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar('7')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-27 14:25:24 --> Object of class stdClass could not be converted to string
+in APPPATH\Models\FuncionariosModel.php on line 100.
+ 1 APPPATH\Controllers\FuncionariosController.php(179): App\Models\FuncionariosModel->obterFKPorId(7)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar('7')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-27 14:25:40 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Validation\Validation.php on line 627.
+ 1 SYSTEMPATH\Validation\Validation.php(627): strtr('required|string|min_length[8]|max_length[200]|is_unique[usuario_comum.USC_SENHA,USC_ID,{USC_ID}]', [...])
+ 2 SYSTEMPATH\Validation\Validation.php(133): CodeIgniter\Validation\Validation->fillPlaceholders([...], [...])
+ 3 SYSTEMPATH\BaseModel.php(1350): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(835): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(Object(stdClass), [...])
+ 6 APPPATH\Controllers\FuncionariosController.php(187): CodeIgniter\Model->update(Object(stdClass), Object(App\Entities\UsuarioComum))
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar('7')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-27 15:07:04 --> Object of class stdClass could not be converted to string
+in APPPATH\Controllers\FuncionariosController.php on line 179.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar('7')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-27 15:12:31 --> Object of class stdClass could not be converted to string
+in APPPATH\Controllers\FuncionariosController.php on line 188.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar('7')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-27 15:12:47 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Validation\Validation.php on line 627.
+ 1 SYSTEMPATH\Validation\Validation.php(627): strtr('required|string|min_length[8]|max_length[200]|is_unique[usuario_comum.USC_SENHA,USC_ID,{USC_ID}]', [...])
+ 2 SYSTEMPATH\Validation\Validation.php(133): CodeIgniter\Validation\Validation->fillPlaceholders([...], [...])
+ 3 SYSTEMPATH\BaseModel.php(1350): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(835): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(Object(stdClass), [...])
+ 6 APPPATH\Controllers\FuncionariosController.php(189): CodeIgniter\Model->update(Object(stdClass), Object(App\Entities\UsuarioComum))
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar('7')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-27 15:12:58 --> Object of class stdClass could not be converted to string
+in APPPATH\Controllers\FuncionariosController.php on line 179.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar('7')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-27 15:14:35 --> Object of class stdClass could not be converted to string
+in APPPATH\Controllers\FuncionariosController.php on line 179.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar('7')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-27 15:16:22 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Validation\Validation.php on line 627.
+ 1 SYSTEMPATH\Validation\Validation.php(627): strtr('required|string|min_length[8]|max_length[200]|is_unique[usuario_comum.USC_SENHA,USC_ID,{USC_ID}]', [...])
+ 2 SYSTEMPATH\Validation\Validation.php(133): CodeIgniter\Validation\Validation->fillPlaceholders([...], [...])
+ 3 SYSTEMPATH\BaseModel.php(1350): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(835): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(Object(stdClass), [...])
+ 6 APPPATH\Controllers\FuncionariosController.php(189): CodeIgniter\Model->update(Object(stdClass), Object(App\Entities\UsuarioComum))
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar('7')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-27 15:21:11 --> Undefined constant "App\Models\FK_USUARIO_COMUM_USC_ID"
+in APPPATH\Models\FuncionariosModel.php on line 102.
+ 1 APPPATH\Controllers\FuncionariosController.php(179): App\Models\FuncionariosModel->obterFKPorId(7)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar('7')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-27 15:21:36 --> Undefined constant "App\Models\FK_USUARIO_COMUM_USC_ID"
+in APPPATH\Models\FuncionariosModel.php on line 102.
+ 1 APPPATH\Controllers\FuncionariosController.php(179): App\Models\FuncionariosModel->obterFKPorId(7)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar('7')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-27 15:22:00 --> Undefined constant "App\Models\FK_USUARIO_COMUM_USC_ID"
+in APPPATH\Models\FuncionariosModel.php on line 102.
+ 1 APPPATH\Controllers\FuncionariosController.php(179): App\Models\FuncionariosModel->obterFKPorId(7)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar('7')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-27 16:47:47 --> Undefined variable $e
+in APPPATH\Controllers\FuncionariosController.php on line 136.
+ 1 APPPATH\Controllers\FuncionariosController.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $e', 'APPPATH\\Controllers\\FuncionariosController.php', 136)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

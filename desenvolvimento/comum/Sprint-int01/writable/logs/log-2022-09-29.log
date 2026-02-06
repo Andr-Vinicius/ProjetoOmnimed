@@ -1,0 +1,80 @@
+ERROR - 2022-09-29 17:53:49 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'omnimed' in C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'omnimed', 3306, '', 0)
+#1 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\app\Models\FuncionariosModel.php(56): CodeIgniter\Database\BaseConnection->query('SELECT * FROM f...')
+#4 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\app\Models\FuncionariosModel.php(119): App\Models\FuncionariosModel->verificarProntuario('AD272711')
+#5 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\app\Controllers\LoginController.php(45): App\Models\FuncionariosModel->logarFuncionario('AD272711', 'sIoMpHhH4R')
+#6 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\LoginController->logar()
+#7 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sarah ...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'omnimed' in C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\app\Models\FuncionariosModel.php(56): CodeIgniter\Database\BaseConnection->query('SELECT * FROM f...')
+#3 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\app\Models\FuncionariosModel.php(119): App\Models\FuncionariosModel->verificarProntuario('AD272711')
+#4 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\app\Controllers\LoginController.php(45): App\Models\FuncionariosModel->logarFuncionario('AD272711', 'sIoMpHhH4R')
+#5 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\LoginController->logar()
+#6 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sarah ...')
+#10 {main}
+CRITICAL - 2022-09-29 17:53:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'omnimed'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\FuncionariosModel.php(56): CodeIgniter\Database\BaseConnection->query('SELECT * FROM funcionarios WHERE FUN_PRONTUARIO = "AD272711"')
+ 3 APPPATH\Models\FuncionariosModel.php(119): App\Models\FuncionariosModel->verificarProntuario('AD272711')
+ 4 APPPATH\Controllers\LoginController.php(45): App\Models\FuncionariosModel->logarFuncionario('AD272711', 'sIoMpHhH4R')
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LoginController->logar()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-29 17:53:57 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'omnimed' in C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'omnimed', 3306, '', 0)
+#1 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\app\Models\FuncionariosModel.php(56): CodeIgniter\Database\BaseConnection->query('SELECT * FROM f...')
+#4 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\app\Models\FuncionariosModel.php(119): App\Models\FuncionariosModel->verificarProntuario('AD272711')
+#5 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\app\Controllers\LoginController.php(45): App\Models\FuncionariosModel->logarFuncionario('AD272711', 'sIoMpHhH4R')
+#6 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\LoginController->logar()
+#7 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sarah ...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'omnimed' in C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\app\Models\FuncionariosModel.php(56): CodeIgniter\Database\BaseConnection->query('SELECT * FROM f...')
+#3 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\app\Models\FuncionariosModel.php(119): App\Models\FuncionariosModel->verificarProntuario('AD272711')
+#4 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\app\Controllers\LoginController.php(45): App\Models\FuncionariosModel->logarFuncionario('AD272711', 'sIoMpHhH4R')
+#5 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\LoginController->logar()
+#6 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Sarah Godoy\Desktop\sarah\brenocoisas\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Sarah ...')
+#10 {main}
+CRITICAL - 2022-09-29 17:53:57 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'omnimed'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\FuncionariosModel.php(56): CodeIgniter\Database\BaseConnection->query('SELECT * FROM funcionarios WHERE FUN_PRONTUARIO = "AD272711"')
+ 3 APPPATH\Models\FuncionariosModel.php(119): App\Models\FuncionariosModel->verificarProntuario('AD272711')
+ 4 APPPATH\Controllers\LoginController.php(45): App\Models\FuncionariosModel->logarFuncionario('AD272711', 'sIoMpHhH4R')
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LoginController->logar()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

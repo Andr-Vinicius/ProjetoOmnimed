@@ -1,0 +1,1 @@
+Nesta seção será apresentada uma representação visual do módulo em questão (Consultório Online). O sistema deverá facilitar e intermediar os processos de agendamento, registro e gestão de consultas. Segue abaixo o diagrama da solução proposta:

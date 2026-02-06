@@ -1,0 +1,31 @@
+SELECT
+DISTINCT co.CNS_ID,
+co.CNS_DATA,
+co.FK_AGENDAMENTOS_AGD_ID,
+ag.AGD_ID,
+ag.AGD_HORARIO,
+ag.FK_MEDICOS_MED_ID,
+ag.FK_PACIENTES_PAC_ID,
+pc.PAC_ID,
+pc.FK_USUARIO_COMUM_USC_ID,
+uc.USC_ID,
+uc.USC_NOME,
+me.MED_ID,
+me.FK_FUNCIONARIOS_FUN_ID,
+fu.FUN_ID,
+fu.FK_USUARIO_COMUM_USC_ID
+
+FROM 
+
+`consultas_online` co,
+`agendamentos` ag,
+`usuario_comum` uc,
+`pacientes` pc,
+`funcionarios` fu,
+`medicos` me
+WHERE 
+
+ag.AGD_ID=co.FK_AGENDAMENTOS_AGD_ID AND 
+me.MED_ID=ag.FK_MEDICOS_MED_ID AND
+pc.PAC_ID=ag.FK_PACIENTES_PAC_ID AND
+uc.USC_ID=pc.FK_USUARIO_COMUM_USC_ID

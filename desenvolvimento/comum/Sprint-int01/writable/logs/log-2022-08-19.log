@@ -1,0 +1,232 @@
+CRITICAL - 2022-08-19 13:45:32 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 13:47:37 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 13:51:38 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 13:51:39 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 13:51:39 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 13:51:39 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 13:51:40 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 13:51:40 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 13:51:42 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 13:53:31 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 13:53:31 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 13:53:32 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 13:56:09 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 13:58:46 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 13:58:48 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 13:58:49 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 13:58:49 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 13:58:50 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 14:01:23 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 14:20:30 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 14:46:20 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 16:06:57 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 16:29:27 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 16:37:58 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 16:38:02 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 16:38:20 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 17:06:19 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 17:10:15 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-19 17:45:08 --> Undefined array key "ADM_FUNCAO"
+in APPPATH\Controllers\FuncionariosController.php on line 31.
+ 1 APPPATH\Controllers\FuncionariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADM_FUNCAO"', 'APPPATH\\Controllers\\FuncionariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

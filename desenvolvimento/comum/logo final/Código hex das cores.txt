@@ -1,0 +1,5 @@
+Cinza - #484848
+Ciano escuro - #006465
+Ciano - #c9ebe8 / #9cdad6 / #0f928c / #005e63
+Azul claro - #00c9d2
+Verde claro - #beee3b

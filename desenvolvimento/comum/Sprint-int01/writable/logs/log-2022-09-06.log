@@ -1,0 +1,22 @@
+CRITICAL - 2022-09-06 17:37:40 --> Undefined array key "usuario"
+in APPPATH\Views\agendamentos\create.php on line 4.
+ 1 APPPATH\Views\agendamentos\create.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usuario"', 'APPPATH\\Views\\agendamentos\\create.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\agendamentos\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/agendamentos/create.php', [], true)
+ 5 APPPATH\Controllers\AgendamentosController.php(17): view('/agendamentos/create.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AgendamentosController->novo()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AgendamentosController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-06 18:40:51 --> Invalid file: /usuarios_comum/create.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/usuarios_comum/create.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/usuarios_comum/create.php', [], true)
+ 3 APPPATH\Controllers\UsuarioComumController.php(13): view('/usuarios_comum/create.php')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\UsuarioComumController->novo()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioComumController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

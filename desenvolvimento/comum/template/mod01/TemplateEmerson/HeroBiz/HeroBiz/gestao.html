@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Omnimed</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <link href="assets/img/Logo2.png" rel="icon">
+
+    <link href="assets/css/variables.css" rel="stylesheet">
+
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/jquery.dataTables.min.css">
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.7/css/responsive.bootstrap4.min.css" />
+    <style type="text/css">
+        .grid tr:nth-child(odd) {
+            background: #04D9D9;
+        }
+
+        .grid tr:nth-child(even) {
+            background: #0F8C80;
+        }
+
+        .grid tr:nth-child(even) a{
+            color:white;
+        }
+
+        .grid td {
+            border: 1px solid #e4e4e4;
+            color: rgb(255, 255, 255);
+            font-size: 13px;
+            height: 10px;
+            text-align: center;
+        }
+
+        .grid td a{
+            color: #404040;
+        }
+
+        .grid th {
+            background: #404040;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            height: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            border: 1px solid #e4e4e4;
+        }
+
+
+        .gv {
+            overflow-x: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="header fixed-top" data-scrollto-offset="0">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> 
+            <h1>HeroBiz<span>.</span></h1> -->
+                <img src="assets/img/2logo2.png" alt="">
+            </a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+
+                    <li class="dropdown"><a href="#"><span>Home</span> <i
+                                class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li><a href="index.html">Home 1 - index.html</a></li>
+                            <li><a href="index-2.html">Home 2 - index-2.html</a></li>
+                            <li><a href="index-3.html" class="active">Home 3 - index-3.html</a></li>
+                            <li><a href="index-4.html">Home 4 - index-4.html</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
+                    <li><a class="nav-link scrollto" href="index.html#portfolio">Portfolio</a></li>
+                    <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li class="dropdown megamenu"><a href="#"><span>Mega Menu</span> <i
+                                class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li>
+                                <a href="#">Column 1 link 1</a>
+                                <a href="#">Column 1 link 2</a>
+                                <a href="#">Column 1 link 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Column 2 link 1</a>
+                                <a href="#">Column 2 link 2</a>
+                                <a href="#">Column 3 link 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Column 3 link 1</a>
+                                <a href="#">Column 3 link 2</a>
+                                <a href="#">Column 3 link 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Column 4 link 1</a>
+                                <a href="#">Column 4 link 2</a>
+                                <a href="#">Column 4 link 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#"><span>Drop Down</span> <i
+                                class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li><a href="#">Drop Down 1</a></li>
+                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
+                                        class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                <ul>
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Drop Down 2</a></li>
+                            <li><a href="#">Drop Down 3</a></li>
+                            <li><a href="#">Drop Down 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle d-none"></i>
+            </nav><!-- .navbar -->
+
+            <a class="btn-getstarted scrollto" href="index.html#about">Get Started</a>
+
+        </div>
+    </header>
+
+    <section id="hero-fullscreen" class="hero-fullscreen d-flex align-items-center">
+        <div class="container d-flex flex-column align-items-center position-relative" data-aos="zoom-out">
+            <h2><span>Gestão</span> dos Funcionários</h2>
+            <p>Gerenciamento completo de todos os funcionários do sistema</p>
+            <!--
+          <div class="d-flex">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+          -->
+        </div>
+    </section>
+
+    <main id="main" style="padding-top: 10px;">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="gv">
+                        <table id="example" class="table table-striped table-bordered grid" style="width:100%;">
+                            <thead>
+                                <tr>
+                                    <th>Nome completo</th>
+                                    <th>Função</th>
+                                    <th>CPF/CRM</th>
+                                    <th>Telefone celular</th>
+                                    <th>Excluir</th>
+                                    <th>Editar</th>
+                                    <th>Visualizar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tiger Nixon</td>
+                                    <td>System Architect</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#"><span class='bi bi-trash'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-pencil-square'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-eye'></span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Garrett Winters</td>
+                                    <td>Accountant</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#"><span class='bi bi-trash'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-pencil-square'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-eye'></span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Ashton Cox</td>
+                                    <td>Junior Technical Author</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#"><span class='bi bi-trash'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-pencil-square'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-eye'></span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Cedric Kelly</td>
+                                    <td>Senior Javascript Developer</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#"><span class='bi bi-trash'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-pencil-square'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-eye'></span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Airi Satou</td>
+                                    <td>Accountant</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#"><span class='bi bi-trash'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-pencil-square'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-eye'></span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Brielle Williamson</td>
+                                    <td>Integration Specialist</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#"><span class='bi bi-trash'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-pencil-square'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-eye'></span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Herrod Chandler</td>
+                                    <td>Sales Assistant</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#"><span class='bi bi-trash'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-pencil-square'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-eye'></span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Rhona Davidson</td>
+                                    <td>Integration Specialist</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#"><span class='bi bi-trash'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-pencil-square'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-eye'></span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Colleen Hurst</td>
+                                    <td>Javascript Developer</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#"><span class='bi bi-trash'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-pencil-square'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-eye'></span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Sonya Frost</td>
+                                    <td>Software Engineer</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#"><span class='bi bi-trash'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-pencil-square'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-eye'></span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Jena Gaines</td>
+                                    <td>Office Manager</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#"><span class='bi bi-trash'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-pencil-square'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-eye'></span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Quinn Flynn</td>
+                                    <td>Support Lead</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#"><span class='bi bi-trash'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-pencil-square'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-eye'></span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Charde Marshall</td>
+                                    <td>Regional Director</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#"><span class='bi bi-trash'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-pencil-square'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-eye'></span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Haley Kennedy</td>
+                                    <td>Senior Marketing Designer</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#"><span class='bi bi-trash'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-pencil-square'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-eye'></span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Tatyana Fitzpatrick</td>
+                                    <td>Regional Director</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#"><span class='bi bi-trash'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-pencil-square'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-eye'></span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Michael Silva</td>
+                                    <td>Marketing Designer</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#"><span class='bi bi-trash'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-pencil-square'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-eye'></span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Paul Byrd</td>
+                                    <td>Chief Financial Officer (CFO)</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#"><span class='bi bi-trash'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-pencil-square'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-eye'></span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Gloria Little</td>
+                                    <td>Systems Administrator</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#"><span class='bi bi-trash'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-pencil-square'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-eye'></span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Bradley Greer</td>
+                                    <td>Software Engineer</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#"><span class='bi bi-trash'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-pencil-square'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-eye'></span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Dai Rios</td>
+                                    <td>Personnel Lead</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#"><span class='bi bi-trash'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-pencil-square'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-eye'></span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Jenette Caldwell</td>
+                                    <td>Development Lead</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#"><span class='bi bi-trash'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-pencil-square'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-eye'></span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Yuri Berry</td>
+                                    <td>Chief Marketing Officer (CMO)</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#"><span class='bi bi-trash'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-pencil-square'></span></a></td>
+                                    <td><a href="#"><span class='bi bi-eye'></span></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Teste Datatables -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src=" https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable( {
+                dom: 'lfBrtip',
+                buttons: [
+                    {
+                        extend: "pdf",
+                        text: "Exportar <em>PDF</em>",
+                        className: 'downloadPdf',
+                        exportOptions: {
+                            columns: ':visible'
+                        },
+                        customize: function (doc) {
+                            doc.content[1].table.widths = 
+                                Array(doc.content[1].table.body[0].length + 1).join('*').split('');
+                            doc.styles.tableBodyEven = {
+                                alignment: 'center'
+                            };
+                            doc.styles.tableBodyOdd = {
+                                alignment: 'center'
+                            };
+                        }
+                    }  
+                ],
+                "language": {
+                    "lengthMenu": "Mostrar _MENU_ resultados por página",
+                    "zeroRecords": "Nada encontrado",
+                    "info": "Mostrando página _PAGE_ de _PAGES_",
+                    "infoEmpty": "Não disponível",
+                    "infoFiltered": "(filtrado do _MAX_ total de dados)",
+                    "search": "Pesquisar:",
+                    "searchPlaceholder": "Nome, CPF, CRM...",
+                    "paginate": {
+                        "first":      "Primeiro",
+                        "last":       "Último",
+                        "next":       "Próximo",
+                        "previous":   "Anterior"
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

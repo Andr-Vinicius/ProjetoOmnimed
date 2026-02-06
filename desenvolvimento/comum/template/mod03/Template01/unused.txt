@@ -1,0 +1,3 @@
+blog-details.html
+blog-home.html
+elements.html

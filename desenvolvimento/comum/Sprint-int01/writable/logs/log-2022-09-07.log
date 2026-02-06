@@ -1,0 +1,44 @@
+CRITICAL - 2022-09-07 10:13:59 --> Undefined variable $funcionarios
+in APPPATH\Views\funcionarios\list.php on line 148.
+ 1 APPPATH\Views\funcionarios\list.php(148): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $funcionarios', 'APPPATH\\Views\\funcionarios\\list.php', 148)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\funcionarios\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/funcionarios/list.php', [], true)
+ 5 APPPATH\Controllers\FuncionariosController.php(20): view('/funcionarios/list.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->listagem()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-07 10:34:28 --> Invalid file: /usuarios_comum/list.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/usuarios_comum/list.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/usuarios_comum/list.php', [], true)
+ 3 APPPATH\Controllers\UsuarioComumController.php(17): view('/usuarios_comum/list.php')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\UsuarioComumController->listagem()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioComumController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-07 10:34:49 --> Invalid file: /medicos/list.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/medicos/list.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/medicos/list.php', [], true)
+ 3 APPPATH\Controllers\MedicosController.php(17): view('/medicos/list.php')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MedicosController->listagem()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MedicosController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-07 10:35:06 --> Undefined array key "usuario"
+in APPPATH\Views\administrativo\view_administrativoLogado.php on line 78.
+ 1 APPPATH\Views\administrativo\view_administrativoLogado.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usuario"', 'APPPATH\\Views\\administrativo\\view_administrativoLogado.php', 78)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\administrativo\\view_administrativoLogado.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/administrativo/view_administrativoLogado.php', [], true)
+ 5 APPPATH\Controllers\AdministrativoController.php(11): view('/administrativo/view_administrativoLogado.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdministrativoController->logado()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrativoController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

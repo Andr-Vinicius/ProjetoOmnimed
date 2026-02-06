@@ -1,0 +1,61 @@
+CRITICAL - 2022-08-16 23:35:00 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 219.
+ 1 SYSTEMPATH\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+ERROR - 2022-08-16 16:36:33 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'omnimed' in C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'omnimed', 3306, '', 0)
+#1 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\app\Views\finalidades\list.php(7): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\View\View.php(213): include('C:\\Users\\bv1201...')
+#8 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\Common.php(1137): CodeIgniter\View\View->render('/finalidades/li...', Array, true)
+#10 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\app\Controllers\FinalidadesController.php(16): view('/finalidades/li...')
+#11 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\FinalidadesController->listagem()
+#12 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinalidadesController))
+#13 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\bv1201...')
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'omnimed' in C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\app\Views\finalidades\list.php(7): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\View\View.php(213): include('C:\\Users\\bv1201...')
+#7 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\Common.php(1137): CodeIgniter\View\View->render('/finalidades/li...', Array, true)
+#9 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\app\Controllers\FinalidadesController.php(16): view('/finalidades/li...')
+#10 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\FinalidadesController->listagem()
+#11 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinalidadesController))
+#12 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\Users\bv120133\Documents\SVN\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\bv1201...')
+#15 {main}
+CRITICAL - 2022-08-16 16:36:33 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'omnimed'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `finalidade_remedios`', [], false)
+ 3 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Views\finalidades\list.php(7): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\finalidades\\list.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/finalidades/list.php', [], true)
+ 9 APPPATH\Controllers\FinalidadesController.php(16): view('/finalidades/list.php')
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FinalidadesController->listagem()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FinalidadesController))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

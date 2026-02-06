@@ -1,0 +1,3 @@
+<?php
+  echo "DETALHES DA CONSULTA ONLINE";
+?>
