@@ -1,0 +1,69 @@
+CRITICAL - 2022-09-24 20:56:32 --> Class "PHPMailer\PHPMailer\Exception" not found
+in APPPATH\PHPMailer-6.6.4\src\PHPMailer.php on line 2193.
+ 1 APPPATH\PHPMailer-6.6.4\src\PHPMailer.php(2003): PHPMailer\PHPMailer\PHPMailer->smtpConnect([])
+ 2 APPPATH\PHPMailer-6.6.4\src\PHPMailer.php(1662): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Sat, 24 Sep 2022 20:55:39 -0500
+To: omnimed.telemedicina@outlook.com.br
+From: Omnimed - Telemedicina <omnimed.telemedicina@outlook.com.br>
+Reply-To: Vinicius <email@gmail.com>
+Subject: Teste
+Message-ID: <HlnQwJwuXG9jKQyngmgITEiSu0dqJUJuvFlfQF9CE@localhost>
+X-Mailer: PHPMailer 6.6.4 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: base64
+
+', 'Q29yaW50aGlhbnMgZnJlZ3XDqnMgZG8gUGFsbWVpcmFz
+')
+ 3 APPPATH\PHPMailer-6.6.4\src\PHPMailer.php(1500): PHPMailer\PHPMailer\PHPMailer->postSend()
+ 4 APPPATH\Controllers\EmailController.php(135): PHPMailer\PHPMailer\PHPMailer->send()
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->enviar()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-24 20:58:42 --> Class "PHPMailer\PHPMailer\Exception" not found
+in APPPATH\PHPMailer-6.6.4\src\PHPMailer.php on line 2193.
+ 1 APPPATH\PHPMailer-6.6.4\src\PHPMailer.php(2003): PHPMailer\PHPMailer\PHPMailer->smtpConnect([])
+ 2 APPPATH\PHPMailer-6.6.4\src\PHPMailer.php(1662): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Sat, 24 Sep 2022 20:58:32 -0500
+To: omnimed.telemedicina@outlook.com.br
+From: Omnimed - Telemedicina <omnimed.telemedicina@outlook.com.br>
+Reply-To: Vinicius <email@gmail.com>
+Subject: Teste
+Message-ID: <igyqf0r0tqoucD2Ez8M0jGasz9u3uwaZZkQPkTA6WQ@localhost>
+X-Mailer: PHPMailer 6.6.4 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: base64
+
+', 'Q29yaW50aGlhbnMgbWluw7pzY3VsbyA=
+')
+ 3 APPPATH\PHPMailer-6.6.4\src\PHPMailer.php(1500): PHPMailer\PHPMailer\PHPMailer->postSend()
+ 4 APPPATH\Controllers\EmailController.php(135): PHPMailer\PHPMailer\PHPMailer->send()
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->enviar()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-24 20:59:46 --> Class "PHPMailer\PHPMailer\Exception" not found
+in APPPATH\PHPMailer-6.6.4\src\PHPMailer.php on line 2193.
+ 1 APPPATH\PHPMailer-6.6.4\src\PHPMailer.php(2003): PHPMailer\PHPMailer\PHPMailer->smtpConnect([])
+ 2 APPPATH\PHPMailer-6.6.4\src\PHPMailer.php(1662): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Sat, 24 Sep 2022 20:59:36 -0500
+To: omnimed.telemedicina@outlook.com.br
+From: Omnimed - Telemedicina <omnimed.telemedicina@outlook.com.br>
+Reply-To: Vinicius <email@gmail.com>
+Subject: Teste
+Message-ID: <zWsNFwkH0nBRK0izVyv4F6bHqY9byJZMyd7QYc@localhost>
+X-Mailer: PHPMailer 6.6.4 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: base64
+
+', 'Q29yaW50aGlhbnMgbWluw7pzY3VsbyA=
+')
+ 3 APPPATH\PHPMailer-6.6.4\src\PHPMailer.php(1500): PHPMailer\PHPMailer\PHPMailer->postSend()
+ 4 APPPATH\Controllers\EmailController.php(135): PHPMailer\PHPMailer\PHPMailer->send()
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->enviar()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

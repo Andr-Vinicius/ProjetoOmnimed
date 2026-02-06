@@ -1,0 +1,581 @@
+CRITICAL - 2022-08-26 07:54:16 --> Undefined property: stdClass::$DEP_ID
+in APPPATH\Views\dependentes\list.php on line 145.
+ 1 APPPATH\Views\dependentes\list.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$DEP_ID', 'APPPATH\\Views\\dependentes\\list.php', 145)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 5 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-26 07:57:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE
+                    dependentes.FK_PACIENTES_FK_USUARIO_COMUM_USC_ID =...' at line 5 in C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT usuario_...', 0)
+#1 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT usuario_...')
+#2 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT usuario_...')
+#3 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Models\DependentesModel.php(109): CodeIgniter\Database\BaseConnection->query('SELECT usuario_...')
+#4 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Views\dependentes\list.php(9): App\Models\DependentesModel->findAllDependentes()
+#5 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\View\View.php(213): include('C:\\xampp3\\htdoc...')
+#6 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Common.php(1137): CodeIgniter\View\View->render('/dependentes/li...', Array, true)
+#8 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Controllers\DependentesController.php(17): view('/dependentes/li...')
+#9 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+#10 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+#11 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp3\\htdoc...')
+#14 {main}
+CRITICAL - 2022-08-26 07:57:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE
+                    dependentes.FK_PACIENTES_FK_USUARIO_COMUM_USC_ID =...' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT usuario_comum.USC_NOME, usuario_comum.USC_DATA_NASCIMENTO, usuario_comum.USC_CPF, dependentes.DEP_NV_PARENTESCO
+                    FROM 
+                    dependentes,
+                    pacientes,
+                    WHERE
+                    dependentes.FK_PACIENTES_FK_USUARIO_COMUM_USC_ID = pacientes.FK_USUARIO_COMUM_USC_ID', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT usuario_comum.USC_NOME, usuario_comum.USC_DATA_NASCIMENTO, usuario_comum.USC_CPF, dependentes.DEP_NV_PARENTESCO
+                    FROM 
+                    dependentes,
+                    pacientes,
+                    WHERE
+                    dependentes.FK_PACIENTES_FK_USUARIO_COMUM_USC_ID = pacientes.FK_USUARIO_COMUM_USC_ID')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT usuario_comum.USC_NOME, usuario_comum.USC_DATA_NASCIMENTO, usuario_comum.USC_CPF, dependentes.DEP_NV_PARENTESCO
+                    FROM 
+                    dependentes,
+                    pacientes,
+                    WHERE
+                    dependentes.FK_PACIENTES_FK_USUARIO_COMUM_USC_ID = pacientes.FK_USUARIO_COMUM_USC_ID')
+ 4 APPPATH\Models\DependentesModel.php(109): CodeIgniter\Database\BaseConnection->query('SELECT usuario_comum.USC_NOME, usuario_comum.USC_DATA_NASCIMENTO, usuario_comum.USC_CPF, dependentes.DEP_NV_PARENTESCO
+                    FROM 
+                    dependentes,
+                    pacientes,
+                    WHERE
+                    dependentes.FK_PACIENTES_FK_USUARIO_COMUM_USC_ID = pacientes.FK_USUARIO_COMUM_USC_ID')
+ 5 APPPATH\Views\dependentes\list.php(9): App\Models\DependentesModel->findAllDependentes()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 9 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-26 07:57:30 --> mysqli_sql_exception: Unknown column 'usuario_comum.USC_NOME' in 'field list' in C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT usuario_...', 0)
+#1 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT usuario_...')
+#2 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT usuario_...')
+#3 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Models\DependentesModel.php(109): CodeIgniter\Database\BaseConnection->query('SELECT usuario_...')
+#4 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Views\dependentes\list.php(9): App\Models\DependentesModel->findAllDependentes()
+#5 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\View\View.php(213): include('C:\\xampp3\\htdoc...')
+#6 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Common.php(1137): CodeIgniter\View\View->render('/dependentes/li...', Array, true)
+#8 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Controllers\DependentesController.php(17): view('/dependentes/li...')
+#9 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+#10 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+#11 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp3\\htdoc...')
+#14 {main}
+CRITICAL - 2022-08-26 07:57:30 --> Unknown column 'usuario_comum.USC_NOME' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT usuario_comum.USC_NOME, usuario_comum.USC_DATA_NASCIMENTO, usuario_comum.USC_CPF, dependentes.DEP_NV_PARENTESCO
+                    FROM 
+                    dependentes,
+                    pacientes
+                    WHERE
+                    dependentes.FK_PACIENTES_FK_USUARIO_COMUM_USC_ID = pacientes.FK_USUARIO_COMUM_USC_ID', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT usuario_comum.USC_NOME, usuario_comum.USC_DATA_NASCIMENTO, usuario_comum.USC_CPF, dependentes.DEP_NV_PARENTESCO
+                    FROM 
+                    dependentes,
+                    pacientes
+                    WHERE
+                    dependentes.FK_PACIENTES_FK_USUARIO_COMUM_USC_ID = pacientes.FK_USUARIO_COMUM_USC_ID')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT usuario_comum.USC_NOME, usuario_comum.USC_DATA_NASCIMENTO, usuario_comum.USC_CPF, dependentes.DEP_NV_PARENTESCO
+                    FROM 
+                    dependentes,
+                    pacientes
+                    WHERE
+                    dependentes.FK_PACIENTES_FK_USUARIO_COMUM_USC_ID = pacientes.FK_USUARIO_COMUM_USC_ID')
+ 4 APPPATH\Models\DependentesModel.php(109): CodeIgniter\Database\BaseConnection->query('SELECT usuario_comum.USC_NOME, usuario_comum.USC_DATA_NASCIMENTO, usuario_comum.USC_CPF, dependentes.DEP_NV_PARENTESCO
+                    FROM 
+                    dependentes,
+                    pacientes
+                    WHERE
+                    dependentes.FK_PACIENTES_FK_USUARIO_COMUM_USC_ID = pacientes.FK_USUARIO_COMUM_USC_ID')
+ 5 APPPATH\Views\dependentes\list.php(9): App\Models\DependentesModel->findAllDependentes()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 9 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-26 08:00:01 --> Undefined property: stdClass::$DEP_ID
+in APPPATH\Views\dependentes\list.php on line 145.
+ 1 APPPATH\Views\dependentes\list.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$DEP_ID', 'APPPATH\\Views\\dependentes\\list.php', 145)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 5 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-26 08:02:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS dep, usuario_comum AS usc' at line 1 in C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT usc.USC_...', 0)
+#1 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT usc.USC_...')
+#2 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT usc.USC_...')
+#3 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Models\DependentesModel.php(104): CodeIgniter\Database\BaseConnection->query('SELECT usc.USC_...')
+#4 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Views\dependentes\list.php(9): App\Models\DependentesModel->findAllDependentes()
+#5 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\View\View.php(213): include('C:\\xampp3\\htdoc...')
+#6 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Common.php(1137): CodeIgniter\View\View->render('/dependentes/li...', Array, true)
+#8 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Controllers\DependentesController.php(17): view('/dependentes/li...')
+#9 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+#10 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+#11 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp3\\htdoc...')
+#14 {main}
+CRITICAL - 2022-08-26 08:02:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS dep, usuario_comum AS usc' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT usc.USC_NOME, usc.USC_DATA_NASCIMENTO, usc.USC_CPF, dep.DEP_NV_PARENTESCO FROM  AS dep, usuario_comum AS usc;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT usc.USC_NOME, usc.USC_DATA_NASCIMENTO, usc.USC_CPF, dep.DEP_NV_PARENTESCO FROM  AS dep, usuario_comum AS usc;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT usc.USC_NOME, usc.USC_DATA_NASCIMENTO, usc.USC_CPF, dep.DEP_NV_PARENTESCO FROM  AS dep, usuario_comum AS usc;')
+ 4 APPPATH\Models\DependentesModel.php(104): CodeIgniter\Database\BaseConnection->query('SELECT usc.USC_NOME, usc.USC_DATA_NASCIMENTO, usc.USC_CPF, dep.DEP_NV_PARENTESCO FROM  AS dep, usuario_comum AS usc;')
+ 5 APPPATH\Views\dependentes\list.php(9): App\Models\DependentesModel->findAllDependentes()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 9 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-26 08:03:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT usc.USC_...', 0)
+#1 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT usc.USC_...')
+#2 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT usc.USC_...')
+#3 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Models\DependentesModel.php(104): CodeIgniter\Database\BaseConnection->query('SELECT usc.USC_...')
+#4 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Views\dependentes\list.php(9): App\Models\DependentesModel->findAllDependentes()
+#5 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\View\View.php(213): include('C:\\xampp3\\htdoc...')
+#6 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Common.php(1137): CodeIgniter\View\View->render('/dependentes/li...', Array, true)
+#8 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Controllers\DependentesController.php(17): view('/dependentes/li...')
+#9 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+#10 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+#11 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp3\\htdoc...')
+#14 {main}
+CRITICAL - 2022-08-26 08:03:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT usc.USC_NOME, usc.USC_DATA_NASCIMENTO, usc.USC_CPF, dep.DEP_NV_PARENTESCO FROM ;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT usc.USC_NOME, usc.USC_DATA_NASCIMENTO, usc.USC_CPF, dep.DEP_NV_PARENTESCO FROM ;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT usc.USC_NOME, usc.USC_DATA_NASCIMENTO, usc.USC_CPF, dep.DEP_NV_PARENTESCO FROM ;')
+ 4 APPPATH\Models\DependentesModel.php(104): CodeIgniter\Database\BaseConnection->query('SELECT usc.USC_NOME, usc.USC_DATA_NASCIMENTO, usc.USC_CPF, dep.DEP_NV_PARENTESCO FROM ;')
+ 5 APPPATH\Views\dependentes\list.php(9): App\Models\DependentesModel->findAllDependentes()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 9 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-26 14:47:04 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(Object(App\Entities\Remedios), null)
+ 4 APPPATH\Controllers\RemediosController.php(110): CodeIgniter\Model->update(Object(App\Entities\Remedios))
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RemediosController->salvarEdicao()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemediosController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-26 14:47:27 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(Object(App\Entities\Remedios), null)
+ 4 APPPATH\Controllers\RemediosController.php(110): CodeIgniter\Model->update(Object(App\Entities\Remedios))
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RemediosController->salvarEdicao()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemediosController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-26 14:48:05 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(Object(App\Entities\Remedios), null)
+ 4 APPPATH\Controllers\RemediosController.php(112): CodeIgniter\Model->update(Object(App\Entities\Remedios))
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RemediosController->salvarEdicao()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemediosController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-26 15:12:36 --> Too few arguments to function App\Controllers\UsoRemediosController::editar(), 0 passed in C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php on line 898 and exactly 1 expected
+in APPPATH\Controllers\UsoRemediosController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\UsoRemediosController->editar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsoRemediosController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-26 16:23:49 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\planos\edit.php on line 148.
+ 1 APPPATH\Views\planos\edit.php(148): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\planos\\edit.php', 148)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\planos\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/planos/edit.php', [], true)
+ 5 APPPATH\Controllers\PlanosController.php(32): view('/planos/edit.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PlanosController->editar('7')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanosController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-26 16:28:51 --> Undefined variable $beneficio
+in APPPATH\Views\planos\edit.php on line 182.
+ 1 APPPATH\Views\planos\edit.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $beneficio', 'APPPATH\\Views\\planos\\edit.php', 182)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\planos\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/planos/edit.php', [], true)
+ 5 APPPATH\Controllers\PlanosController.php(32): view('/planos/edit.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PlanosController->editar('7')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanosController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-26 16:31:32 --> Undefined variable $beneficio
+in APPPATH\Views\planos\edit.php on line 192.
+ 1 APPPATH\Views\planos\edit.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $beneficio', 'APPPATH\\Views\\planos\\edit.php', 192)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\planos\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/planos/edit.php', [], true)
+ 5 APPPATH\Controllers\PlanosController.php(32): view('/planos/edit.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PlanosController->editar('7')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanosController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-26 16:38:50 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\RemediosController.php(110): CodeIgniter\Model->update(null, Object(App\Entities\Remedios))
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RemediosController->salvarEdicao()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemediosController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-26 16:39:07 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\RemediosController.php(110): CodeIgniter\Model->update(null, Object(App\Entities\Remedios))
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RemediosController->salvarEdicao()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemediosController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-26 16:39:16 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\RemediosController.php(110): CodeIgniter\Model->update(null, Object(App\Entities\Remedios))
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RemediosController->salvarEdicao()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemediosController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-26 16:39:35 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\RemediosController.php(110): CodeIgniter\Model->update(null, Object(App\Entities\Remedios))
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RemediosController->salvarEdicao()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemediosController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-26 16:40:59 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\RemediosController.php(110): CodeIgniter\Model->update(null, Object(App\Entities\Remedios))
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RemediosController->salvarEdicao()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RemediosController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-26 17:21:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE FK_PLANOS_PLN_ID = 9' at line 1 in C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\app\Models\PlanosBeneficiosModel.php(61): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\app\Controllers\PlanosBeneficiosController.php(24): App\Models\PlanosBeneficiosModel->contarListagem(9)
+#5 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\PlanosBeneficiosController->editar()
+#6 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanosBeneficiosController))
+#7 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\junin\\...')
+#10 {main}
+CRITICAL - 2022-08-26 17:21:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE FK_PLANOS_PLN_ID = 9' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 9')
+ 4 APPPATH\Models\PlanosBeneficiosModel.php(61): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 9')
+ 5 APPPATH\Controllers\PlanosBeneficiosController.php(24): App\Models\PlanosBeneficiosModel->contarListagem(9)
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PlanosBeneficiosController->editar()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanosBeneficiosController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-26 17:24:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE FK_PLANOS_PLN_ID = 9' at line 1 in C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\app\Models\PlanosBeneficiosModel.php(61): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\app\Controllers\PlanosBeneficiosController.php(26): App\Models\PlanosBeneficiosModel->contarListagem(9)
+#5 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\PlanosBeneficiosController->editar()
+#6 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanosBeneficiosController))
+#7 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\junin\\...')
+#10 {main}
+CRITICAL - 2022-08-26 17:24:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE FK_PLANOS_PLN_ID = 9' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 9')
+ 4 APPPATH\Models\PlanosBeneficiosModel.php(61): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 9')
+ 5 APPPATH\Controllers\PlanosBeneficiosController.php(26): App\Models\PlanosBeneficiosModel->contarListagem(9)
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PlanosBeneficiosController->editar()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanosBeneficiosController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-26 17:24:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE FK_PLANOS_PLN_ID = 9' at line 1 in C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\app\Models\PlanosBeneficiosModel.php(61): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\app\Controllers\PlanosBeneficiosController.php(26): App\Models\PlanosBeneficiosModel->contarListagem(9)
+#5 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\PlanosBeneficiosController->editar()
+#6 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanosBeneficiosController))
+#7 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\junin\\...')
+#10 {main}
+CRITICAL - 2022-08-26 17:24:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE FK_PLANOS_PLN_ID = 9' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 9')
+ 4 APPPATH\Models\PlanosBeneficiosModel.php(61): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 9')
+ 5 APPPATH\Controllers\PlanosBeneficiosController.php(26): App\Models\PlanosBeneficiosModel->contarListagem(9)
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PlanosBeneficiosController->editar()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanosBeneficiosController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-26 17:25:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE FK_PLANOS_PLN_ID = 9' at line 1 in C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\app\Models\PlanosBeneficiosModel.php(61): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\app\Controllers\PlanosBeneficiosController.php(26): App\Models\PlanosBeneficiosModel->contarListagem(9)
+#5 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\PlanosBeneficiosController->editar()
+#6 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanosBeneficiosController))
+#7 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\junin\\...')
+#10 {main}
+CRITICAL - 2022-08-26 17:25:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE FK_PLANOS_PLN_ID = 9' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 9')
+ 4 APPPATH\Models\PlanosBeneficiosModel.php(61): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 9')
+ 5 APPPATH\Controllers\PlanosBeneficiosController.php(26): App\Models\PlanosBeneficiosModel->contarListagem(9)
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PlanosBeneficiosController->editar()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanosBeneficiosController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-26 17:26:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE FK_PLANOS_PLN_ID = 9' at line 1 in C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\app\Models\PlanosBeneficiosModel.php(61): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\app\Controllers\PlanosBeneficiosController.php(28): App\Models\PlanosBeneficiosModel->contarListagem(9)
+#5 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\PlanosBeneficiosController->editar()
+#6 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanosBeneficiosController))
+#7 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\junin\\...')
+#10 {main}
+CRITICAL - 2022-08-26 17:26:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE FK_PLANOS_PLN_ID = 9' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 9')
+ 4 APPPATH\Models\PlanosBeneficiosModel.php(61): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 9')
+ 5 APPPATH\Controllers\PlanosBeneficiosController.php(28): App\Models\PlanosBeneficiosModel->contarListagem(9)
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PlanosBeneficiosController->editar()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanosBeneficiosController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-26 17:28:46 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1596.
+ 1 SYSTEMPATH\BaseModel.php(1596): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray([], 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], Object(App\Entities\PlanosBeneficios))
+ 4 APPPATH\Controllers\PlanosBeneficiosController.php(29): CodeIgniter\Model->update('9', Object(App\Entities\PlanosBeneficios))
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PlanosBeneficiosController->editar()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanosBeneficiosController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-26 17:29:25 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1596.
+ 1 SYSTEMPATH\BaseModel.php(1596): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray([], 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], Object(App\Entities\PlanosBeneficios))
+ 4 APPPATH\Controllers\PlanosBeneficiosController.php(29): CodeIgniter\Model->update('9', Object(App\Entities\PlanosBeneficios))
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PlanosBeneficiosController->editar()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanosBeneficiosController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-26 17:39:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE FK_PLANOS_PLN_ID = 10' at line 1 in C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\app\Models\PlanosBeneficiosModel.php(61): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\app\Controllers\PlanosBeneficiosController.php(24): App\Models\PlanosBeneficiosModel->contarListagem(10)
+#5 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\PlanosBeneficiosController->editar()
+#6 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanosBeneficiosController))
+#7 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\junin\Documents\IF\IF\7Semestre\PID\Projeto\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\junin\\...')
+#10 {main}
+CRITICAL - 2022-08-26 17:39:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE FK_PLANOS_PLN_ID = 10' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 10')
+ 4 APPPATH\Models\PlanosBeneficiosModel.php(61): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS total_registros FROM  WHERE FK_PLANOS_PLN_ID = 10')
+ 5 APPPATH\Controllers\PlanosBeneficiosController.php(24): App\Models\PlanosBeneficiosModel->contarListagem(10)
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PlanosBeneficiosController->editar()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanosBeneficiosController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-26 17:44:44 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1596.
+ 1 SYSTEMPATH\BaseModel.php(1596): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray([], 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], Object(App\Entities\PlanosBeneficios))
+ 4 APPPATH\Controllers\PlanosBeneficiosController.php(29): CodeIgniter\Model->update('10', Object(App\Entities\PlanosBeneficios))
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PlanosBeneficiosController->editar()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanosBeneficiosController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-26 17:47:22 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1596.
+ 1 SYSTEMPATH\BaseModel.php(1596): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray([], 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], Object(App\Entities\PlanosBeneficios))
+ 4 APPPATH\Controllers\PlanosBeneficiosController.php(29): CodeIgniter\Model->update('10', Object(App\Entities\PlanosBeneficios))
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PlanosBeneficiosController->editar()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanosBeneficiosController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-26 17:47:23 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1596.
+ 1 SYSTEMPATH\BaseModel.php(1596): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray([], 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], Object(App\Entities\PlanosBeneficios))
+ 4 APPPATH\Controllers\PlanosBeneficiosController.php(29): CodeIgniter\Model->update('10', Object(App\Entities\PlanosBeneficios))
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PlanosBeneficiosController->editar()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanosBeneficiosController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-26 17:47:41 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1596.
+ 1 SYSTEMPATH\BaseModel.php(1596): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray([], 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], Object(App\Entities\PlanosBeneficios))
+ 4 APPPATH\Controllers\PlanosBeneficiosController.php(29): CodeIgniter\Model->update('10', Object(App\Entities\PlanosBeneficios))
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PlanosBeneficiosController->editar()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanosBeneficiosController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-26 20:47:44 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`omnimed`.`administrativo`, CONSTRAINT `FK_ADMINISTRATIVO_2` FOREIGN KEY (`FK_FUNCIONARIOS_FUN_ID`, `FK_FUNCIONARIOS_FK_USUARIO_COMUM_USC_ID`) REFERENCES `funcionarios` (`FUN_ID`, `FK_USUARIO_) in C:\xampp\htdocs\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ad...', 0)
+#1 C:\xampp\htdocs\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 C:\xampp\htdocs\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 C:\xampp\htdocs\Projeto\desenvolvimento\comum\Sprint-int01\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 C:\xampp\htdocs\Projeto\desenvolvimento\comum\Sprint-int01\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Projeto\desenvolvimento\comum\Sprint-int01\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Projeto\desenvolvimento\comum\Sprint-int01\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Projeto\desenvolvimento\comum\Sprint-int01\system\BaseModel.php(658): CodeIgniter\Model->insert(Object(App\Entities\Administrativo), false)
+#8 C:\xampp\htdocs\Projeto\desenvolvimento\comum\Sprint-int01\app\Controllers\FuncionariosController.php(122): CodeIgniter\BaseModel->save(Object(App\Entities\Administrativo))
+#9 C:\xampp\htdocs\Projeto\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+#10 C:\xampp\htdocs\Projeto\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+#11 C:\xampp\htdocs\Projeto\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Projeto\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Projeto\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2022-08-26 21:01:01 --> Undefined variable $e
+in APPPATH\Controllers\FuncionariosController.php on line 135.
+ 1 APPPATH\Controllers\FuncionariosController.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $e', 'APPPATH\\Controllers\\FuncionariosController.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-26 21:13:47 --> Undefined variable $e
+in APPPATH\Controllers\FuncionariosController.php on line 139.
+ 1 APPPATH\Controllers\FuncionariosController.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $e', 'APPPATH\\Controllers\\FuncionariosController.php', 139)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-26 21:19:52 --> Undefined variable $e
+in APPPATH\Controllers\FuncionariosController.php on line 130.
+ 1 APPPATH\Controllers\FuncionariosController.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $e', 'APPPATH\\Controllers\\FuncionariosController.php', 130)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

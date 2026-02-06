@@ -1,0 +1,56 @@
+ERROR - 2022-09-22 20:26:32 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'omnimed' in C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'omnimed', 3306, '', 0)
+#1 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Views\contatos_setoriais\list.php(7): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\View\View.php(213): include('C:\\xampp3\\htdoc...')
+#8 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Common.php(1137): CodeIgniter\View\View->render('/contatos_setor...', Array, true)
+#10 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Controllers\ContatosSetoriaisController.php(10): view('/contatos_setor...')
+#11 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\ContatosSetoriaisController->listagem()
+#12 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContatosSetoriaisController))
+#13 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp3\\htdoc...')
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'omnimed' in C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Views\contatos_setoriais\list.php(7): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\View\View.php(213): include('C:\\xampp3\\htdoc...')
+#7 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Common.php(1137): CodeIgniter\View\View->render('/contatos_setor...', Array, true)
+#9 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Controllers\ContatosSetoriaisController.php(10): view('/contatos_setor...')
+#10 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\ContatosSetoriaisController->listagem()
+#11 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContatosSetoriaisController))
+#12 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp3\\htdoc...')
+#15 {main}
+CRITICAL - 2022-09-22 20:26:32 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'omnimed'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `contatos_setoriais`', [], false)
+ 3 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Views\contatos_setoriais\list.php(7): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\contatos_setoriais\\list.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/contatos_setoriais/list.php', [], true)
+ 9 APPPATH\Controllers\ContatosSetoriaisController.php(10): view('/contatos_setoriais/list.php')
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ContatosSetoriaisController->listagem()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContatosSetoriaisController))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

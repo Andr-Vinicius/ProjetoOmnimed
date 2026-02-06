@@ -1,0 +1,942 @@
+CRITICAL - 2022-08-30 07:53:16 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\ThirdParty\Kint\Renderer\RichRenderer.php on line 617.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-30 12:14:23 --> Object of class App\Entities\Funcionarios could not be converted to string
+in APPPATH\Controllers\FuncionariosController.php on line 260.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar('8')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 12:20:21 --> CodeIgniter\Entity\Entity::fill(): Argument #1 ($data) must be of type ?array, App\Entities\UsuarioComum given, called in C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Controllers\FuncionariosController.php on line 331
+in SYSTEMPATH\Entity\Entity.php on line 130.
+ 1 APPPATH\Controllers\FuncionariosController.php(331): CodeIgniter\Entity\Entity->fill(Object(App\Entities\UsuarioComum))
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar('8')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 12:21:28 --> CodeIgniter\Entity\Entity::fill(): Argument #1 ($data) must be of type ?array, App\Entities\UsuarioComum given, called in C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Controllers\FuncionariosController.php on line 331
+in SYSTEMPATH\Entity\Entity.php on line 130.
+ 1 APPPATH\Controllers\FuncionariosController.php(331): CodeIgniter\Entity\Entity->fill(Object(App\Entities\UsuarioComum))
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar('8')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 12:32:19 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray('27', 'insert')
+ 2 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert('27', false)
+ 3 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert('27', false)
+ 4 APPPATH\Controllers\FuncionariosController.php(305): CodeIgniter\BaseModel->save('27', Object(App\Entities\UsuarioComum))
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar('8')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 12:37:55 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray('8', 'insert')
+ 2 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert('8', false)
+ 3 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert('8', false)
+ 4 APPPATH\Controllers\FuncionariosController.php(321): CodeIgniter\BaseModel->save('8', Object(App\Entities\Funcionarios))
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar('8')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 12:40:12 --> CodeIgniter\Model::insert(): Argument #2 ($returnID) must be of type bool, App\Entities\Administrativo given, called in C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Controllers\FuncionariosController.php on line 349
+in SYSTEMPATH\Model.php on line 652.
+ 1 APPPATH\Controllers\FuncionariosController.php(349): CodeIgniter\Model->insert('27', Object(App\Entities\Administrativo))
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\FuncionariosController->atualizar('8')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FuncionariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 14:03:54 --> Attempt to read property "DEP_ID" on array
+in APPPATH\Views\dependentes\list.php on line 145.
+ 1 APPPATH\Views\dependentes\list.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "DEP_ID" on array', 'APPPATH\\Views\\dependentes\\list.php', 145)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 5 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 14:11:30 --> Undefined variable $id
+in APPPATH\Views\dependentes\list.php on line 9.
+ 1 APPPATH\Views\dependentes\list.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Views\\dependentes\\list.php', 9)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 5 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-30 14:14:00 --> mysqli_sql_exception: Unknown table 'usuario_comum' in field list in C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT usuario_...', 0)
+#1 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT usuario_...')
+#2 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT usuario_...')
+#3 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Models\DependentesModel.php(109): CodeIgniter\Database\BaseConnection->query('SELECT usuario_...')
+#4 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Views\dependentes\list.php(9): App\Models\DependentesModel->findAllDependentes()
+#5 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\View\View.php(213): include('C:\\xampp3\\htdoc...')
+#6 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Common.php(1137): CodeIgniter\View\View->render('/dependentes/li...', Array, true)
+#8 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Controllers\DependentesController.php(17): view('/dependentes/li...')
+#9 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+#10 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+#11 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp3\\htdoc...')
+#14 {main}
+CRITICAL - 2022-08-30 14:14:00 --> Unknown table 'usuario_comum' in field list
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT usuario_comum.USC_NOME, usuario_comum.USC_DATA_NASCIMENTO, usuario_comum.USC_CPF, dependentes.DEP_NV_PARENTESCO;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT usuario_comum.USC_NOME, usuario_comum.USC_DATA_NASCIMENTO, usuario_comum.USC_CPF, dependentes.DEP_NV_PARENTESCO;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT usuario_comum.USC_NOME, usuario_comum.USC_DATA_NASCIMENTO, usuario_comum.USC_CPF, dependentes.DEP_NV_PARENTESCO;')
+ 4 APPPATH\Models\DependentesModel.php(109): CodeIgniter\Database\BaseConnection->query('SELECT usuario_comum.USC_NOME, usuario_comum.USC_DATA_NASCIMENTO, usuario_comum.USC_CPF, dependentes.DEP_NV_PARENTESCO;')
+ 5 APPPATH\Views\dependentes\list.php(9): App\Models\DependentesModel->findAllDependentes()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 9 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 14:14:56 --> Attempt to read property "DEP_ID" on array
+in APPPATH\Views\dependentes\list.php on line 145.
+ 1 APPPATH\Views\dependentes\list.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "DEP_ID" on array', 'APPPATH\\Views\\dependentes\\list.php', 145)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 5 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 14:15:35 --> Undefined property: stdClass::$DEP_ID
+in APPPATH\Views\dependentes\list.php on line 145.
+ 1 APPPATH\Views\dependentes\list.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$DEP_ID', 'APPPATH\\Views\\dependentes\\list.php', 145)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 5 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 14:15:58 --> Attempt to read property "DEP_ID" on array
+in APPPATH\Views\dependentes\list.php on line 145.
+ 1 APPPATH\Views\dependentes\list.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "DEP_ID" on array', 'APPPATH\\Views\\dependentes\\list.php', 145)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 5 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 14:17:56 --> Undefined property: stdClass::$DEP_ID
+in APPPATH\Views\dependentes\list.php on line 145.
+ 1 APPPATH\Views\dependentes\list.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$DEP_ID', 'APPPATH\\Views\\dependentes\\list.php', 145)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 5 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 14:19:43 --> Undefined property: stdClass::$DEP_ID
+in APPPATH\Views\dependentes\list.php on line 145.
+ 1 APPPATH\Views\dependentes\list.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$DEP_ID', 'APPPATH\\Views\\dependentes\\list.php', 145)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 5 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 14:20:43 --> Undefined property: stdClass::$DEP_ID
+in APPPATH\Views\dependentes\list.php on line 145.
+ 1 APPPATH\Views\dependentes\list.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$DEP_ID', 'APPPATH\\Views\\dependentes\\list.php', 145)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 5 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 14:21:16 --> Undefined property: stdClass::$DEP_ID
+in APPPATH\Views\dependentes\list.php on line 145.
+ 1 APPPATH\Views\dependentes\list.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$DEP_ID', 'APPPATH\\Views\\dependentes\\list.php', 145)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 5 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-30 14:24:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS dep, usuario_comum AS usc' at line 1 in C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT usc.USC_...', 0)
+#1 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT usc.USC_...')
+#2 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT usc.USC_...')
+#3 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Models\DependentesModel.php(96): CodeIgniter\Database\BaseConnection->query('SELECT usc.USC_...')
+#4 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Views\dependentes\list.php(9): App\Models\DependentesModel->findAllDependentes()
+#5 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\View\View.php(213): include('C:\\xampp3\\htdoc...')
+#6 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Common.php(1137): CodeIgniter\View\View->render('/dependentes/li...', Array, true)
+#8 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Controllers\DependentesController.php(17): view('/dependentes/li...')
+#9 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+#10 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+#11 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp3\\htdoc...')
+#14 {main}
+CRITICAL - 2022-08-30 14:24:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS dep, usuario_comum AS usc' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT usc.USC_NOME, usc.USC_DATA_NASCIMENTO, usc.USC_CPF, dep.DEP_NV_PARENTESCO FROM  AS dep, usuario_comum AS usc;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT usc.USC_NOME, usc.USC_DATA_NASCIMENTO, usc.USC_CPF, dep.DEP_NV_PARENTESCO FROM  AS dep, usuario_comum AS usc;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT usc.USC_NOME, usc.USC_DATA_NASCIMENTO, usc.USC_CPF, dep.DEP_NV_PARENTESCO FROM  AS dep, usuario_comum AS usc;')
+ 4 APPPATH\Models\DependentesModel.php(96): CodeIgniter\Database\BaseConnection->query('SELECT usc.USC_NOME, usc.USC_DATA_NASCIMENTO, usc.USC_CPF, dep.DEP_NV_PARENTESCO FROM  AS dep, usuario_comum AS usc;')
+ 5 APPPATH\Views\dependentes\list.php(9): App\Models\DependentesModel->findAllDependentes()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 9 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-30 14:25:37 --> mysqli_sql_exception: Unknown column 'usuario_comum.USC_NOME' in 'field list' in C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT usuario_...', 0)
+#1 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT usuario_...')
+#2 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT usuario_...')
+#3 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Models\DependentesModel.php(96): CodeIgniter\Database\BaseConnection->query('SELECT usuario_...')
+#4 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Views\dependentes\list.php(9): App\Models\DependentesModel->findAllDependentes()
+#5 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\View\View.php(213): include('C:\\xampp3\\htdoc...')
+#6 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Common.php(1137): CodeIgniter\View\View->render('/dependentes/li...', Array, true)
+#8 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Controllers\DependentesController.php(17): view('/dependentes/li...')
+#9 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+#10 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+#11 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp3\\htdoc...')
+#14 {main}
+CRITICAL - 2022-08-30 14:25:37 --> Unknown column 'usuario_comum.USC_NOME' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT usuario_comum.USC_NOME, usuario_comum.USC_DATA_NASCIMENTO, usuario_comum.USC_CPF, dependentes.DEP_NV_PARENTESCO FROM dependentes;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT usuario_comum.USC_NOME, usuario_comum.USC_DATA_NASCIMENTO, usuario_comum.USC_CPF, dependentes.DEP_NV_PARENTESCO FROM dependentes;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT usuario_comum.USC_NOME, usuario_comum.USC_DATA_NASCIMENTO, usuario_comum.USC_CPF, dependentes.DEP_NV_PARENTESCO FROM dependentes;')
+ 4 APPPATH\Models\DependentesModel.php(96): CodeIgniter\Database\BaseConnection->query('SELECT usuario_comum.USC_NOME, usuario_comum.USC_DATA_NASCIMENTO, usuario_comum.USC_CPF, dependentes.DEP_NV_PARENTESCO FROM dependentes;')
+ 5 APPPATH\Views\dependentes\list.php(9): App\Models\DependentesModel->findAllDependentes()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 9 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 14:26:13 --> Undefined property: stdClass::$DEP_ID
+in APPPATH\Views\dependentes\list.php on line 145.
+ 1 APPPATH\Views\dependentes\list.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$DEP_ID', 'APPPATH\\Views\\dependentes\\list.php', 145)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 5 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-30 14:30:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and usuario_comum' at line 1 in C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT usuario_...', 0)
+#1 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT usuario_...')
+#2 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT usuario_...')
+#3 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Models\DependentesModel.php(96): CodeIgniter\Database\BaseConnection->query('SELECT usuario_...')
+#4 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Views\dependentes\list.php(9): App\Models\DependentesModel->findAllDependentes()
+#5 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\View\View.php(213): include('C:\\xampp3\\htdoc...')
+#6 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Common.php(1137): CodeIgniter\View\View->render('/dependentes/li...', Array, true)
+#8 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\app\Controllers\DependentesController.php(17): view('/dependentes/li...')
+#9 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+#10 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+#11 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp3\htdocs\OMNIMED\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp3\\htdoc...')
+#14 {main}
+CRITICAL - 2022-08-30 14:30:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and usuario_comum' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT usuario_comum.USC_NOME, usuario_comum.USC_DATA_NASCIMENTO, usuario_comum.USC_CPF, dependentes.DEP_NV_PARENTESCO FROM dependentes and usuario_comum;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT usuario_comum.USC_NOME, usuario_comum.USC_DATA_NASCIMENTO, usuario_comum.USC_CPF, dependentes.DEP_NV_PARENTESCO FROM dependentes and usuario_comum;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT usuario_comum.USC_NOME, usuario_comum.USC_DATA_NASCIMENTO, usuario_comum.USC_CPF, dependentes.DEP_NV_PARENTESCO FROM dependentes and usuario_comum;')
+ 4 APPPATH\Models\DependentesModel.php(96): CodeIgniter\Database\BaseConnection->query('SELECT usuario_comum.USC_NOME, usuario_comum.USC_DATA_NASCIMENTO, usuario_comum.USC_CPF, dependentes.DEP_NV_PARENTESCO FROM dependentes and usuario_comum;')
+ 5 APPPATH\Views\dependentes\list.php(9): App\Models\DependentesModel->findAllDependentes()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 9 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 14:44:22 --> Undefined array key "usuario"
+in APPPATH\Views\dependentes\list.php on line 7.
+ 1 APPPATH\Views\dependentes\list.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usuario"', 'APPPATH\\Views\\dependentes\\list.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 5 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 14:44:54 --> Undefined array key "usuario"
+in APPPATH\Views\dependentes\list.php on line 4.
+ 1 APPPATH\Views\dependentes\list.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usuario"', 'APPPATH\\Views\\dependentes\\list.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 5 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 14:45:15 --> Undefined array key "id"
+in APPPATH\Views\dependentes\list.php on line 4.
+ 1 APPPATH\Views\dependentes\list.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\dependentes\\list.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dependentes\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/dependentes/list.php', [], true)
+ 5 APPPATH\Controllers\DependentesController.php(17): view('/dependentes/list.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\DependentesController->listagem()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependentesController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+<<<<<<< .mine
+CRITICAL - 2022-08-30 16:40:34 --> Undefined array key "usuario"
+in APPPATH\Views\agendamentos\create.php on line 4.
+ 1 APPPATH\Views\agendamentos\create.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usuario"', 'APPPATH\\Views\\agendamentos\\create.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\agendamentos\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/agendamentos/create.php', [], true)
+ 5 APPPATH\Controllers\AgendamentosController.php(17): view('/agendamentos/create.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AgendamentosController->novo()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AgendamentosController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-30 16:46:24 --> mysqli_sql_exception: Unknown column 'AGD_TRIAGEM_REALIZADA' in 'field list' in C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ag...', 0)
+#1 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ag...')
+#2 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ag...')
+#3 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ag...', Array, false)
+#4 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\BaseModel.php(658): CodeIgniter\Model->insert(Object(App\Entities\Agendamentos), false)
+#8 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\app\Controllers\AgendamentosController.php(68): CodeIgniter\BaseModel->save(Object(App\Entities\Agendamentos))
+#9 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\AgendamentosController->salvar()
+#10 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AgendamentosController))
+#11 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\bv3005...')
+#14 {main}
+CRITICAL - 2022-08-30 16:46:24 --> Unknown column 'AGD_TRIAGEM_REALIZADA' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `agendamentos` (`AGD_STATUS`, `AGD_ENCAMINHAMENTOS`, `AGD_DATA`, `AGD_HORARIO`, `AGD_MEET_LINK`, `FK_PACIENTES_PAC_ID`, `FK_PACIENTES_FK_USUARIO_COMUM_USC_ID`, `FK_MEDICOS_MED_ID`, `FK_MEDICOS_FK_FUNCIONARIOS_FUN_ID`, `FK_MEDICOS_FK_FUNCIONARIOS_FK_USUARIO_COMUM_USC_ID`, `FK_ESPECIALIDADES_MEDICAS_ESM_ID`, `AGD_TRIAGEM_REALIZADA`, `AGD_RETORNO`) VALUES (\'1\', \'0\', \'2022-08-31\', \'1661895967\', \'\', \'1\', \'1\', \'1\', \'1\', \'2\', \'2\', \'0\', \'0\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `agendamentos` (`AGD_STATUS`, `AGD_ENCAMINHAMENTOS`, `AGD_DATA`, `AGD_HORARIO`, `AGD_MEET_LINK`, `FK_PACIENTES_PAC_ID`, `FK_PACIENTES_FK_USUARIO_COMUM_USC_ID`, `FK_MEDICOS_MED_ID`, `FK_MEDICOS_FK_FUNCIONARIOS_FUN_ID`, `FK_MEDICOS_FK_FUNCIONARIOS_FK_USUARIO_COMUM_USC_ID`, `FK_ESPECIALIDADES_MEDICAS_ESM_ID`, `AGD_TRIAGEM_REALIZADA`, `AGD_RETORNO`) VALUES (\'1\', \'0\', \'2022-08-31\', \'1661895967\', \'\', \'1\', \'1\', \'1\', \'1\', \'2\', \'2\', \'0\', \'0\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `agendamentos` (`AGD_STATUS`, `AGD_ENCAMINHAMENTOS`, `AGD_DATA`, `AGD_HORARIO`, `AGD_MEET_LINK`, `FK_PACIENTES_PAC_ID`, `FK_PACIENTES_FK_USUARIO_COMUM_USC_ID`, `FK_MEDICOS_MED_ID`, `FK_MEDICOS_FK_FUNCIONARIOS_FUN_ID`, `FK_MEDICOS_FK_FUNCIONARIOS_FK_USUARIO_COMUM_USC_ID`, `FK_ESPECIALIDADES_MEDICAS_ESM_ID`, `AGD_TRIAGEM_REALIZADA`, `AGD_RETORNO`) VALUES (\'1\', \'0\', \'2022-08-31\', \'1661895967\', \'\', \'1\', \'1\', \'1\', \'1\', \'2\', \'2\', \'0\', \'0\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `agendamentos` (`AGD_STATUS`, `AGD_ENCAMINHAMENTOS`, `AGD_DATA`, `AGD_HORARIO`, `AGD_MEET_LINK`, `FK_PACIENTES_PAC_ID`, `FK_PACIENTES_FK_USUARIO_COMUM_USC_ID`, `FK_MEDICOS_MED_ID`, `FK_MEDICOS_FK_FUNCIONARIOS_FUN_ID`, `FK_MEDICOS_FK_FUNCIONARIOS_FK_USUARIO_COMUM_USC_ID`, `FK_ESPECIALIDADES_MEDICAS_ESM_ID`, `AGD_TRIAGEM_REALIZADA`, `AGD_RETORNO`) VALUES (:AGD_STATUS:, :AGD_ENCAMINHAMENTOS:, :AGD_DATA:, :AGD_HORARIO:, :AGD_MEET_LINK:, :FK_PACIENTES_PAC_ID:, :FK_PACIENTES_FK_USUARIO_COMUM_USC_ID:, :FK_MEDICOS_MED_ID:, :FK_MEDICOS_FK_FUNCIONARIOS_FUN_ID:, :FK_MEDICOS_FK_FUNCIONARIOS_FK_USUARIO_COMUM_USC_ID:, :FK_ESPECIALIDADES_MEDICAS_ESM_ID:, :AGD_TRIAGEM_REALIZADA:, :AGD_RETORNO:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert(Object(App\Entities\Agendamentos), false)
+ 9 APPPATH\Controllers\AgendamentosController.php(68): CodeIgniter\BaseModel->save(Object(App\Entities\Agendamentos))
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AgendamentosController->salvar()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AgendamentosController))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-30 16:48:18 --> mysqli_sql_exception: Unknown column 'AGD_TRIAGEM_REALIZADA' in 'field list' in C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ag...', 0)
+#1 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ag...')
+#2 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ag...')
+#3 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ag...', Array, false)
+#4 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\BaseModel.php(658): CodeIgniter\Model->insert(Object(App\Entities\Agendamentos), false)
+#8 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\app\Controllers\AgendamentosController.php(68): CodeIgniter\BaseModel->save(Object(App\Entities\Agendamentos))
+#9 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\AgendamentosController->salvar()
+#10 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AgendamentosController))
+#11 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\bv3005411\Desktop\pde\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\bv3005...')
+#14 {main}
+CRITICAL - 2022-08-30 16:48:18 --> Unknown column 'AGD_TRIAGEM_REALIZADA' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `agendamentos` (`AGD_STATUS`, `AGD_ENCAMINHAMENTOS`, `AGD_DATA`, `AGD_HORARIO`, `AGD_MEET_LINK`, `FK_PACIENTES_PAC_ID`, `FK_PACIENTES_FK_USUARIO_COMUM_USC_ID`, `FK_MEDICOS_MED_ID`, `FK_MEDICOS_FK_FUNCIONARIOS_FUN_ID`, `FK_MEDICOS_FK_FUNCIONARIOS_FK_USUARIO_COMUM_USC_ID`, `FK_ESPECIALIDADES_MEDICAS_ESM_ID`, `AGD_TRIAGEM_REALIZADA`, `AGD_RETORNO`) VALUES (\'1\', \'1\', \'2022-08-30\', \'1661896089\', \'\', \'1\', \'1\', \'1\', \'1\', \'2\', \'2\', \'0\', \'0\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `agendamentos` (`AGD_STATUS`, `AGD_ENCAMINHAMENTOS`, `AGD_DATA`, `AGD_HORARIO`, `AGD_MEET_LINK`, `FK_PACIENTES_PAC_ID`, `FK_PACIENTES_FK_USUARIO_COMUM_USC_ID`, `FK_MEDICOS_MED_ID`, `FK_MEDICOS_FK_FUNCIONARIOS_FUN_ID`, `FK_MEDICOS_FK_FUNCIONARIOS_FK_USUARIO_COMUM_USC_ID`, `FK_ESPECIALIDADES_MEDICAS_ESM_ID`, `AGD_TRIAGEM_REALIZADA`, `AGD_RETORNO`) VALUES (\'1\', \'1\', \'2022-08-30\', \'1661896089\', \'\', \'1\', \'1\', \'1\', \'1\', \'2\', \'2\', \'0\', \'0\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `agendamentos` (`AGD_STATUS`, `AGD_ENCAMINHAMENTOS`, `AGD_DATA`, `AGD_HORARIO`, `AGD_MEET_LINK`, `FK_PACIENTES_PAC_ID`, `FK_PACIENTES_FK_USUARIO_COMUM_USC_ID`, `FK_MEDICOS_MED_ID`, `FK_MEDICOS_FK_FUNCIONARIOS_FUN_ID`, `FK_MEDICOS_FK_FUNCIONARIOS_FK_USUARIO_COMUM_USC_ID`, `FK_ESPECIALIDADES_MEDICAS_ESM_ID`, `AGD_TRIAGEM_REALIZADA`, `AGD_RETORNO`) VALUES (\'1\', \'1\', \'2022-08-30\', \'1661896089\', \'\', \'1\', \'1\', \'1\', \'1\', \'2\', \'2\', \'0\', \'0\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `agendamentos` (`AGD_STATUS`, `AGD_ENCAMINHAMENTOS`, `AGD_DATA`, `AGD_HORARIO`, `AGD_MEET_LINK`, `FK_PACIENTES_PAC_ID`, `FK_PACIENTES_FK_USUARIO_COMUM_USC_ID`, `FK_MEDICOS_MED_ID`, `FK_MEDICOS_FK_FUNCIONARIOS_FUN_ID`, `FK_MEDICOS_FK_FUNCIONARIOS_FK_USUARIO_COMUM_USC_ID`, `FK_ESPECIALIDADES_MEDICAS_ESM_ID`, `AGD_TRIAGEM_REALIZADA`, `AGD_RETORNO`) VALUES (:AGD_STATUS:, :AGD_ENCAMINHAMENTOS:, :AGD_DATA:, :AGD_HORARIO:, :AGD_MEET_LINK:, :FK_PACIENTES_PAC_ID:, :FK_PACIENTES_FK_USUARIO_COMUM_USC_ID:, :FK_MEDICOS_MED_ID:, :FK_MEDICOS_FK_FUNCIONARIOS_FUN_ID:, :FK_MEDICOS_FK_FUNCIONARIOS_FK_USUARIO_COMUM_USC_ID:, :FK_ESPECIALIDADES_MEDICAS_ESM_ID:, :AGD_TRIAGEM_REALIZADA:, :AGD_RETORNO:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert(Object(App\Entities\Agendamentos), false)
+ 9 APPPATH\Controllers\AgendamentosController.php(68): CodeIgniter\BaseModel->save(Object(App\Entities\Agendamentos))
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AgendamentosController->salvar()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AgendamentosController))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+||||||| .r755
+=======
+CRITICAL - 2022-08-30 16:46:44 --> Invalid file: /usuarios_comum/create.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/usuarios_comum/create.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/usuarios_comum/create.php', [], true)
+ 3 APPPATH\Controllers\UsuarioComumController.php(13): view('/usuarios_comum/create.php')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\UsuarioComumController->novo()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioComumController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+>>>>>>> .r756
+CRITICAL - 2022-08-30 17:31:01 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:31:53 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:32:40 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:32:41 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:32:41 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:32:41 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:32:41 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:32:42 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:32:42 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:32:42 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:32:42 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:32:42 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:32:42 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:32:44 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:32:44 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:32:44 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:32:44 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:32:44 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:32:45 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:32:45 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:33:30 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:33:31 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:33:31 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:33:31 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:33:31 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:33:32 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:33:32 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:33:32 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:39:41 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:40:21 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:40:22 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:40:22 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:40:23 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:40:47 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:40:48 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:40:48 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:41:28 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:41:29 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:41:29 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:41:29 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:41:29 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:41:29 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:46:49 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:46:50 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:46:50 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:46:50 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:46:51 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:46:51 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 17:47:40 --> Class "App\Controllers\UsuarioComum" not found
+in APPPATH\Controllers\PacientesController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-30 17:54:28 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`omnimed`.`pacientes`, CONSTRAINT `FK_PACIENTES_3` FOREIGN KEY (`FK_PLANOS_PLN_ID`) REFERENCES `planos` (`PLN_ID`) ON DELETE CASCADE) in C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\BaseModel.php(658): CodeIgniter\Model->insert(Object(App\Entities\Pacientes), false)
+#8 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\app\Controllers\PacientesController.php(66): CodeIgniter\BaseModel->save(Object(App\Entities\Pacientes))
+#9 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+#10 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+#11 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+ERROR - 2022-08-30 18:22:06 --> mysqli_sql_exception: Column 'RES_QTD_FILHOS' cannot be null in C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\BaseModel.php(658): CodeIgniter\Model->insert(Object(App\Entities\Responsaveis), false)
+#8 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\app\Controllers\PacientesController.php(124): CodeIgniter\BaseModel->save(Object(App\Entities\Responsaveis))
+#9 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\PacientesController->salvar()
+#10 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+#11 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\SVN - 3002616\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+ERROR - 2022-08-30 21:24:50 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'omnimed', 3306, '', 0)
+#1 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\app\Views\prescricoes\create.php(9): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\View\View.php(213): include('C:\\Users\\Webste...')
+#8 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Common.php(1137): CodeIgniter\View\View->render('/prescricoes/cr...', Array, true)
+#10 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\app\Controllers\PrescricoesController.php(13): view('/prescricoes/cr...')
+#11 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\PrescricoesController->novo()
+#12 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrescricoesController))
+#13 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Webste...')
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\app\Views\prescricoes\create.php(9): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\View\View.php(213): include('C:\\Users\\Webste...')
+#7 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Common.php(1137): CodeIgniter\View\View->render('/prescricoes/cr...', Array, true)
+#9 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\app\Controllers\PrescricoesController.php(13): view('/prescricoes/cr...')
+#10 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\PrescricoesController->novo()
+#11 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrescricoesController))
+#12 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Webste...')
+#15 {main}
+CRITICAL - 2022-08-30 21:24:51 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `remedios`', [], false)
+ 3 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Views\prescricoes\create.php(9): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\prescricoes\\create.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/prescricoes/create.php', [], true)
+ 9 APPPATH\Controllers\PrescricoesController.php(13): view('/prescricoes/create.php')
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PrescricoesController->novo()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrescricoesController))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 21:36:55 --> Undefined variable $remedios
+in APPPATH\Views\prescricoes\create.php on line 133.
+ 1 APPPATH\Views\prescricoes\create.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $remedios', 'APPPATH\\Views\\prescricoes\\create.php', 133)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\prescricoes\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/prescricoes/create.php', [], true)
+ 5 APPPATH\Controllers\PrescricoesController.php(13): view('/prescricoes/create.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PrescricoesController->novo()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrescricoesController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 21:37:10 --> Undefined variable $remedios
+in APPPATH\Views\prescricoes\create.php on line 133.
+ 1 APPPATH\Views\prescricoes\create.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $remedios', 'APPPATH\\Views\\prescricoes\\create.php', 133)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\prescricoes\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/prescricoes/create.php', [], true)
+ 5 APPPATH\Controllers\PrescricoesController.php(13): view('/prescricoes/create.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PrescricoesController->novo()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrescricoesController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 21:38:39 --> Undefined variable $remedios
+in APPPATH\Views\prescricoes\create.php on line 133.
+ 1 APPPATH\Views\prescricoes\create.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $remedios', 'APPPATH\\Views\\prescricoes\\create.php', 133)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\prescricoes\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/prescricoes/create.php', [], true)
+ 5 APPPATH\Controllers\PrescricoesController.php(13): view('/prescricoes/create.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PrescricoesController->novo()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrescricoesController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 21:38:42 --> Undefined variable $remedios
+in APPPATH\Views\prescricoes\create.php on line 133.
+ 1 APPPATH\Views\prescricoes\create.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $remedios', 'APPPATH\\Views\\prescricoes\\create.php', 133)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\prescricoes\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/prescricoes/create.php', [], true)
+ 5 APPPATH\Controllers\PrescricoesController.php(13): view('/prescricoes/create.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PrescricoesController->novo()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrescricoesController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 21:41:00 --> Undefined variable $remedios
+in APPPATH\Views\prescricoes\create.php on line 133.
+ 1 APPPATH\Views\prescricoes\create.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $remedios', 'APPPATH\\Views\\prescricoes\\create.php', 133)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\prescricoes\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/prescricoes/create.php', [], true)
+ 5 APPPATH\Controllers\PrescricoesController.php(13): view('/prescricoes/create.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PrescricoesController->novo()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrescricoesController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-30 21:41:08 --> require_once(C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\app\Views\prescricoes/../../DAO/PrescricaoDAO.php): Failed to open stream: No such file or directory
+in APPPATH\Views\prescricoes\list.php on line 3.
+ 1 APPPATH\Views\prescricoes\list.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\Users\\Webster Dias Wolak\\Desktop\\Documentos\\IFSP\\PIDC\\SVN-PIDC-Webster\\desenvolvimento\\comum\\Sprint-int01\\app\\Views\\prescricoes/../../DAO/PrescricaoDAO.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\prescricoes\\list.php', 3)
+ 2 APPPATH\Views\prescricoes\list.php(3): require_once()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\prescricoes\\list.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/prescricoes/list.php', [], true)
+ 6 APPPATH\Controllers\PrescricoesController.php(18): view('/prescricoes/list.php')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PrescricoesController->listagem()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrescricoesController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

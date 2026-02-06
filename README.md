@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>Plataforma de Telemedicina - Omnimed</h1>
 <p>
   Um sistema de telemedicina desenvolvido pela minha turma da faculdade de Ciência da Computação (IFSP, campûs de São João da Boa Vista) durante o ano de 2022, este projeto foi trazido pelos professores: Breno Lisi Romano e Everton Rafael da Silva. 
@@ -12,3 +13,7 @@
 </div>
 
 </p>
+=======
+# pidc-pde-2022
+Projeto da Turma de Bacharelado em Ciência da Computação (BCC) do Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - Câmpus São João da Boa Vista, formandos do ano de 2022.
+>>>>>>> master

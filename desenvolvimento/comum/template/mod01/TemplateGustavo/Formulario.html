@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>OMINIMED</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico"/>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+   <!-- Navbar Start -->
+   <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <h2 class="m-0 text-primary"></i>OMINIMED</h2>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link">Inicio</a>
+            <a href="sobre.html" class="nav-item nav-link active">Sobre nos</a>
+            <a href="contato.html" class="nav-item nav-link">Contate-nos</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Paginas</a>
+                <div class="dropdown-menu fade-down m-0">
+                    <a href="Listagem.html" class="dropdown-item">Listagem</a>
+                    <a href="Formulario.html" class="dropdown-item">Formulario</a>
+                </div>
+            </div>
+
+        </div>
+        <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Login<i class="fa fa-arrow-right ms-3"></i></a>
+    </div>
+</nav>
+<!-- Navbar End -->
+  <!-- Header Start -->
+  <div class="container-fluid bg-primary py-5 mb-5 page-header">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h1 class="display-3 text-white animated slideInDown">Cadastro de Usuário</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a class="text-white" href="#">Inicio</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+
+
+
+  <main id="main">
+    <div class="container" style="padding-bottom: 10px;">
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">Nome completo</label>
+          <input type="text" class="form-control" id="validationDefault01" required>
+        </div>
+
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Data de nascimento</label>
+          <input type="date" class="form-control" id="validationDefault02" required>
+        </div>
+
+        <div class="col-md-3">
+          <label for="validationDefault04" class="form-label">Sexo</label>
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled value="">Escolha...</option>
+            <option>M</option>
+            <option>F</option>
+          </select>
+        </div>
+
+        <div class="col-md-2">
+          <label for="validationDefault03" class="form-label">RG</label>
+          <input type="text" pattern="##.###.###-#" placeholder="##.###.###-#" class="form-control"
+            id="validationDefault03">
+        </div>
+
+        <div class="col-md-3">
+          <label for="validationDefault03" class="form-label">CPF</label>
+          <input type="text" pattern="###.###.###-##" placeholder="###.###.###-##" class="form-control"
+            id="validationDefault03">
+        </div>
+
+        <div class="col-md-2">
+          <label for="validationDefault05" class="form-label">Orgão Emissor</label>
+          <input type="text" class="form-control" id="validationDefault05" required>
+        </div>
+
+        <div class="col-md-3">
+          <label for="validationDefault04" class="form-label">Nível de parentesco</label>
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled value="">Escolha...</option>
+            <option>Filho(a)</option>
+            <option>Neto(a)</option>
+            <option>Cônjuge</option>
+            <option>Mãe</option>
+            <option>Pai</option>
+            <option>Outro</option>
+          </select>
+        </div>
+
+        <div class="col-md-5">
+          <label for="validationDefault03" class="form-label">Logradouro</label>
+          <input type="text" placeholder="Rua" class="form-control" id="logradouro" required>
+        </div>
+
+        <div class="col-md-2">
+          <label for="validationDefault03" class="form-label">Número</label>
+          <input type="text" placeholder="123" class="form-control" id="numero" required>
+        </div>
+
+        <div class="col-md-4">
+          <label for="validationDefault03" class="form-label">Bairro</label>
+          <input type="text" placeholder="Bairro" class="form-control" id="bairro" required>
+        </div>
+
+        <div class="col-md-3">
+          <label for="validationDefault03" class="form-label">Cidade</label>
+          <input type="text" class="form-control" id="Cidade" required>
+        </div>
+
+        <div class="col-md-2">
+          <label for="validationDefault03" class="form-label">Estado</label>
+          <input type="text" class="form-control" id="Estado" required>
+        </div>
+
+        <div class="col-md-3">
+          <label for="validationDefault03" class="form-label">CEP</label>
+          <input type="text" pattern="#####-###" placeholder="#####-###" 
+            class="form-control" id="cep" onblur="pesquisacep(this.value);" required>
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Aceito os termos e condições
+            </label>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Enviar solicitação</button>
+        </div>
+      </form>
+    </div>
+
+  </main><!-- End #main -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container py-5">
+          <div class="row g-5">
+              <div class="col-lg-3 col-md-6">
+                  <h4 class="text-white mb-3">Links Rapidos</h4>
+                  <a class="btn btn-link" href="">Sobre Nos</a>
+                  <a class="btn btn-link" href="">Contate-nos</a>
+                  <a class="btn btn-link" href="">Politicas de Privacidade</a>
+                  <a class="btn btn-link" href="">Termos & Condições</a>
+                  <a class="btn btn-link" href="">Perguntas Frequentes</a>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h4 class="text-white mb-3">Contate-nos</h4>
+                  <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+XX (XX)XXXX-XXXX</p>
+                  <p class="mb-2"><i class="fa fa-envelope me-3"></i>exemplo@exemplo.com</p>
+                  <div class="d-flex pt-2">
+                      <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                      <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                      <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+            
+              <div class="col-lg-3 col-md-6">
+                  <h4 class="text-white mb-3">Noticias</h4>
+                  <p>Deseja receber as noticias em primeira mão?</p>
+                  <div class="position-relative mx-auto" style="max-width: 400px;">
+                      <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Seu e-mail">
+                      <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Inscreva-se</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="copyright">
+              <div class="row">
+                  <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                      &copy; <a class="border-bottom" href="#">OMINIMED</a>, TODOS OS DIREITOS Reservados.
+
+                      <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                      Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br><br>
+                      Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                  </div>
+                  <div class="col-md-6 text-center text-md-end">
+                      <div class="footer-menu">
+                          <a href="">Home</a>
+                          <a href="">Cookies</a>
+                          <a href="">Help</a>
+                          <a href="">FQAs</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+
+    function handle(event){
+      document.getElementById('logradouro').disabled = event;
+      document.getElementById('numero').disabled = event;
+      document.getElementById('bairro').disabled = event;
+      document.getElementById('cidade').disabled = event;
+      document.getElementById('estado').disabled = event;
+      
+      limpa_formulário_cep();
+
+      document.getElementById('cep').disabled = event;
+      document.getElementById('cep').value = "";
+    }
+
+    function limpa_formulário_cep() {
+            //Limpa valores do formulário de cep.
+            document.getElementById('logradouro').value=("");
+            document.getElementById('bairro').value=("");
+            document.getElementById('cidade').value=("");
+            document.getElementById('estado').value=("");
+            document.getElementById('numero').value=("");
+    }
+
+    function meu_callback(conteudo) {
+        if (!("erro" in conteudo)) {
+            //Atualiza os campos com os valores.
+            document.getElementById('logradouro').value=(conteudo.logradouro);
+            document.getElementById('bairro').value=(conteudo.bairro);
+            document.getElementById('cidade').value=(conteudo.localidade);
+            document.getElementById('estado').value=(conteudo.uf);
+        } 
+        else {
+            //CEP não Encontrado.
+            limpa_formulário_cep();
+            alert("CEP não encontrado.");
+        }
+    }
+        
+    function pesquisacep(valor) {
+
+        //Nova variável "cep" somente com dígitos.
+        var cep = valor.replace(/\D/g, '');
+
+        //Verifica se campo cep possui valor informado.
+        if (cep != "") {
+
+            //Expressão regular para validar o CEP.
+            var validacep = /^[0-9]{8}$/;
+
+            //Valida o formato do CEP.
+            if(validacep.test(cep)) {
+
+                //Preenche os campos com "..." enquanto consulta webservice.
+                document.getElementById('logradouro').value="...";
+                document.getElementById('bairro').value="...";
+                document.getElementById('cidade').value="...";
+                document.getElementById('estado').value="...";
+
+                //Cria um elemento javascript.
+                var script = document.createElement('script');
+
+                //Sincroniza com o callback.
+                script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
+
+                //Insere script no documento e carrega o conteúdo.
+                document.body.appendChild(script);
+
+            } 
+            else {
+                //cep inválido.
+                limpa_formulário_cep();
+                alert("Formato de CEP inválido.");
+            }
+        }
+        else {
+            //cep sem valor, limpa formulário.
+            limpa_formulário_cep();
+        }
+    };
+
+  </script>
+
+</body>
+
+</html>

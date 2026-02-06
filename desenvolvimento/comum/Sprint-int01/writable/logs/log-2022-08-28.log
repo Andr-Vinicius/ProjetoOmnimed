@@ -1,0 +1,275 @@
+CRITICAL - 2022-08-28 22:00:20 --> Invalid file: recuperarSenha.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('recuperarSenha.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('recuperarSenha.php', [], true)
+ 3 APPPATH\Controllers\EmailController.php(17): view('recuperarSenha.php')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->recuperarView()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:01:16 --> Invalid file: recuperarSenha.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('recuperarSenha.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('recuperarSenha.php', [], true)
+ 3 APPPATH\Controllers\EmailController.php(17): view('recuperarSenha.php')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->recuperarView()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:02:42 --> Invalid file: recuperarSenha.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('recuperarSenha.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('recuperarSenha.php', [], true)
+ 3 APPPATH\Controllers\EmailController.php(17): view('recuperarSenha.php')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->recuperar()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:02:50 --> Invalid file: recuperarSenha.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('recuperarSenha.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('recuperarSenha.php', [], true)
+ 3 APPPATH\Controllers\EmailController.php(17): view('recuperarSenha.php')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->recuperar()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:03:37 --> Invalid file: /recuperarSenha.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/recuperarSenha.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/recuperarSenha.php', [], true)
+ 3 APPPATH\Controllers\EmailController.php(17): view('/recuperarSenha.php')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->recuperar()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:03:39 --> Invalid file: /recuperarSenha.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/recuperarSenha.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/recuperarSenha.php', [], true)
+ 3 APPPATH\Controllers\EmailController.php(17): view('/recuperarSenha.php')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->recuperar()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:19:46 --> Invalid file: .php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('ROOTPATH\\public', [], true)
+ 3 APPPATH\Controllers\EmailController.php(118): view('ROOTPATH\\public', [])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:44:34 --> Object of class App\Models\RecuperarSenhaModel could not be converted to string
+in APPPATH\Controllers\EmailController.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:45:27 --> Object of class App\Models\RecuperarSenhaModel could not be converted to string
+in APPPATH\Controllers\EmailController.php on line 114.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:46:02 --> Object of class App\Models\RecuperarSenhaModel could not be converted to string
+in APPPATH\Controllers\EmailController.php on line 114.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:46:58 --> Object of class App\Models\RecuperarSenhaModel could not be converted to string
+in APPPATH\Controllers\EmailController.php on line 114.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:47:23 --> Object of class App\Models\RecuperarSenhaModel could not be converted to string
+in APPPATH\Controllers\EmailController.php on line 114.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:51:31 --> Object of class App\Models\RecuperarSenhaModel could not be converted to string
+in APPPATH\Controllers\EmailController.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:52:08 --> Object of class App\Models\RecuperarSenhaModel could not be converted to string
+in APPPATH\Controllers\EmailController.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:52:50 --> Object of class App\Models\RecuperarSenhaModel could not be converted to string
+in APPPATH\Controllers\EmailController.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:52:58 --> Object of class App\Models\RecuperarSenhaModel could not be converted to string
+in APPPATH\Controllers\EmailController.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:53:33 --> Undefined property: App\Controllers\EmailController::$recuperarSenhaModel
+in APPPATH\Controllers\EmailController.php on line 108.
+ 1 APPPATH\Controllers\EmailController.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\EmailController::$recuperarSenhaModel', 'APPPATH\\Controllers\\EmailController.php', 108)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:54:05 --> Object of class App\Models\RecuperarSenhaModel could not be converted to string
+in APPPATH\Controllers\EmailController.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:54:15 --> Object of class App\Models\RecuperarSenhaModel could not be converted to string
+in APPPATH\Controllers\EmailController.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:55:39 --> Object of class App\Models\RecuperarSenhaModel could not be converted to string
+in APPPATH\Controllers\EmailController.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:55:45 --> Object of class App\Models\RecuperarSenhaModel could not be converted to string
+in APPPATH\Controllers\EmailController.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:56:05 --> Object of class App\Models\RecuperarSenhaModel could not be converted to string
+in APPPATH\Controllers\EmailController.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:56:13 --> Object of class App\Models\RecuperarSenhaModel could not be converted to string
+in APPPATH\Controllers\EmailController.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:57:51 --> Object of class App\Models\RecuperarSenhaModel could not be converted to string
+in APPPATH\Controllers\EmailController.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:57:59 --> Object of class App\Models\RecuperarSenhaModel could not be converted to string
+in APPPATH\Controllers\EmailController.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 22:59:24 --> Object of class App\Models\RecuperarSenhaModel could not be converted to string
+in APPPATH\Controllers\EmailController.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 23:04:26 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Models\RecuperarSenhaModel.php on line 14.
+ 1 APPPATH\Controllers\EmailController.php(108): App\Models\RecuperarSenhaModel->verificarProntuario('ME126632')
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 23:04:57 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Models\RecuperarSenhaModel.php on line 14.
+ 1 APPPATH\Controllers\EmailController.php(107): App\Models\RecuperarSenhaModel->verificarProntuario('ME126632')
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 23:05:48 --> Array to string conversion
+in APPPATH\Controllers\EmailController.php on line 113.
+ 1 APPPATH\Controllers\EmailController.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\EmailController.php', 113)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 23:06:09 --> Array to string conversion
+in APPPATH\Controllers\EmailController.php on line 113.
+ 1 APPPATH\Controllers\EmailController.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\EmailController.php', 113)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 23:06:40 --> Array to string conversion
+in APPPATH\Controllers\EmailController.php on line 113.
+ 1 APPPATH\Controllers\EmailController.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\EmailController.php', 113)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 23:12:31 --> Object of class App\Models\RecuperarSenhaModel could not be converted to string
+in APPPATH\Controllers\EmailController.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 23:20:12 --> Array to string conversion
+in APPPATH\Controllers\EmailController.php on line 113.
+ 1 APPPATH\Controllers\EmailController.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\EmailController.php', 113)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 23:23:41 --> Undefined property: App\Controllers\EmailController::$session
+in APPPATH\Controllers\EmailController.php on line 115.
+ 1 APPPATH\Controllers\EmailController.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\EmailController::$session', 'APPPATH\\Controllers\\EmailController.php', 115)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-28 23:36:24 --> Undefined property: App\Controllers\EmailController::$session
+in APPPATH\Controllers\EmailController.php on line 115.
+ 1 APPPATH\Controllers\EmailController.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\EmailController::$session', 'APPPATH\\Controllers\\EmailController.php', 115)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\EmailController->envioRecuperar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmailController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

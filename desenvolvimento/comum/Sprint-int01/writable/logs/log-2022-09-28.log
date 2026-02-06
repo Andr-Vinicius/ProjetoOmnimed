@@ -1,0 +1,36 @@
+CRITICAL - 2022-09-28 00:00:29 --> Attempt to read property "USC_NOME" on array
+in APPPATH\Views\agendamentos\confirm.php on line 157.
+ 1 APPPATH\Views\agendamentos\confirm.php(157): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "USC_NOME" on array', 'APPPATH\\Views\\agendamentos\\confirm.php', 157)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\agendamentos\\confirm.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/agendamentos/confirm.php', [], true)
+ 5 APPPATH\Controllers\AgendamentosController.php(60): view('/agendamentos/confirm.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AgendamentosController->confirmar('8')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AgendamentosController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 00:00:31 --> Attempt to read property "USC_NOME" on array
+in APPPATH\Views\agendamentos\confirm.php on line 157.
+ 1 APPPATH\Views\agendamentos\confirm.php(157): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "USC_NOME" on array', 'APPPATH\\Views\\agendamentos\\confirm.php', 157)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\agendamentos\\confirm.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/agendamentos/confirm.php', [], true)
+ 5 APPPATH\Controllers\AgendamentosController.php(60): view('/agendamentos/confirm.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AgendamentosController->confirmar('8')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AgendamentosController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 00:01:53 --> Attempt to read property "USC_NOME" on array
+in APPPATH\Views\agendamentos\confirm.php on line 157.
+ 1 APPPATH\Views\agendamentos\confirm.php(157): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "USC_NOME" on array', 'APPPATH\\Views\\agendamentos\\confirm.php', 157)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\agendamentos\\confirm.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/agendamentos/confirm.php', [], true)
+ 5 APPPATH\Controllers\AgendamentosController.php(60): view('/agendamentos/confirm.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AgendamentosController->confirmar('8')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AgendamentosController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

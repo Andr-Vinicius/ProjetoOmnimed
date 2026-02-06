@@ -1,0 +1,194 @@
+ERROR - 2022-09-30 21:26:15 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'omnimed', 3306, '', 0)
+#1 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\app\Models\PacientesModel.php(115): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\app\Models\PacientesModel.php(83): App\Models\PacientesModel->verificarEmail('maria_silva@hot...')
+#5 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\app\Controllers\LoginController.php(62): App\Models\PacientesModel->logarPaciente('maria_silva@hot...', 'Omnimed@2022')
+#6 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\LoginController->logar()
+#7 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Webste...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\app\Models\PacientesModel.php(115): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#3 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\app\Models\PacientesModel.php(83): App\Models\PacientesModel->verificarEmail('maria_silva@hot...')
+#4 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\app\Controllers\LoginController.php(62): App\Models\PacientesModel->logarPaciente('maria_silva@hot...', 'Omnimed@2022')
+#5 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\LoginController->logar()
+#6 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Webste...')
+#10 {main}
+CRITICAL - 2022-09-30 21:26:15 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\PacientesModel.php(115): CodeIgniter\Database\BaseConnection->query('SELECT * FROM pacientes WHERE PAC_EMAIL = "maria_silva@hotmail.com"')
+ 3 APPPATH\Models\PacientesModel.php(83): App\Models\PacientesModel->verificarEmail('maria_silva@hotmail.com')
+ 4 APPPATH\Controllers\LoginController.php(62): App\Models\PacientesModel->logarPaciente('maria_silva@hotmail.com', 'Omnimed@2022')
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LoginController->logar()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-30 21:26:30 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'omnimed', 3306, '', 0)
+#1 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\app\Models\PacientesModel.php(115): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\app\Models\PacientesModel.php(83): App\Models\PacientesModel->verificarEmail('maria_silva@hot...')
+#5 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\app\Controllers\LoginController.php(62): App\Models\PacientesModel->logarPaciente('maria_silva@hot...', 'Omnimed@2022')
+#6 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\LoginController->logar()
+#7 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Webste...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\app\Models\PacientesModel.php(115): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#3 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\app\Models\PacientesModel.php(83): App\Models\PacientesModel->verificarEmail('maria_silva@hot...')
+#4 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\app\Controllers\LoginController.php(62): App\Models\PacientesModel->logarPaciente('maria_silva@hot...', 'Omnimed@2022')
+#5 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(898): App\Controllers\LoginController->logar()
+#6 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Webste...')
+#10 {main}
+CRITICAL - 2022-09-30 21:26:30 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\PacientesModel.php(115): CodeIgniter\Database\BaseConnection->query('SELECT * FROM pacientes WHERE PAC_EMAIL = "maria_silva@hotmail.com"')
+ 3 APPPATH\Models\PacientesModel.php(83): App\Models\PacientesModel->verificarEmail('maria_silva@hotmail.com')
+ 4 APPPATH\Controllers\LoginController.php(62): App\Models\PacientesModel->logarPaciente('maria_silva@hotmail.com', 'Omnimed@2022')
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\LoginController->logar()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 23:04:26 --> Class "App\Entities\ConsultasOnlineModel" not found
+in APPPATH\Views\consulta\list_patient.php on line 10.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/consulta/list_patient.php', [], true)
+ 4 APPPATH\Controllers\ConsultaController.php(23): view('/consulta/list_patient.php')
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ConsultaController->listagem_paciente()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 23:04:27 --> Class "App\Entities\ConsultasOnlineModel" not found
+in APPPATH\Views\consulta\list_patient.php on line 10.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/consulta/list_patient.php', [], true)
+ 4 APPPATH\Controllers\ConsultaController.php(23): view('/consulta/list_patient.php')
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ConsultaController->listagem_paciente()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 23:05:20 --> Class "App\Model\ConsultasOnlineModel" not found
+in APPPATH\Views\consulta\list_patient.php on line 10.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/consulta/list_patient.php', [], true)
+ 4 APPPATH\Controllers\ConsultaController.php(23): view('/consulta/list_patient.php')
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ConsultaController->listagem_paciente()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 23:05:32 --> Too few arguments to function App\Models\ConsultasOnlineModel::listarConsultasUltimos30Dias(), 0 passed in C:\Users\Webster Dias Wolak\Desktop\Documentos\IFSP\PIDC\SVN-PIDC-Webster\desenvolvimento\comum\Sprint-int01\app\Views\consulta\list_patient.php on line 11 and exactly 1 expected
+in APPPATH\Models\ConsultasOnlineModel.php on line 81.
+ 1 APPPATH\Views\consulta\list_patient.php(11): App\Models\ConsultasOnlineModel->listarConsultasUltimos30Dias()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\consulta\\list_patient.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/consulta/list_patient.php', [], true)
+ 5 APPPATH\Controllers\ConsultaController.php(23): view('/consulta/list_patient.php')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ConsultaController->listagem_paciente()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 23:41:29 --> Invalid file: /consulta/detail.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/consulta/detail.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/consulta/detail.php', [], true)
+ 3 APPPATH\Controllers\ConsultaController.php(19): view('/consulta/detail.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ConsultaController->detalhar('2')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 23:42:00 --> mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, App\Entities\ConsultaOnline given
+in SYSTEMPATH\Database\MySQLi\Result.php on line 148.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(148): mysqli_result->fetch_object('App\\Entities\\ConsultaOnline')
+ 2 SYSTEMPATH\Database\BaseResult.php(149): CodeIgniter\Database\MySQLi\Result->fetchObject('App\\Entities\\ConsultaOnline')
+ 3 SYSTEMPATH\Database\BaseResult.php(106): CodeIgniter\Database\BaseResult->getCustomResultObject('App\\Entities\\ConsultaOnline')
+ 4 SYSTEMPATH\Database\BaseResult.php(377): CodeIgniter\Database\BaseResult->getResult('App\\Entities\\ConsultaOnline')
+ 5 SYSTEMPATH\Model.php(182): CodeIgniter\Database\BaseResult->getFirstRow('App\\Entities\\ConsultaOnline')
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '2')
+ 7 APPPATH\Views\consulta\detail_patient.php(10): CodeIgniter\BaseModel->find('2')
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\consulta\\detail_patient.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/consulta/detail_patient.php', [], true)
+11 APPPATH\Controllers\ConsultaController.php(19): view('/consulta/detail_patient.php', [...])
+12 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ConsultaController->detalhar('2')
+13 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 23:45:54 --> mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, App\Entities\ConsultaOnline given
+in SYSTEMPATH\Database\MySQLi\Result.php on line 148.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(148): mysqli_result->fetch_object('App\\Entities\\ConsultaOnline')
+ 2 SYSTEMPATH\Database\BaseResult.php(149): CodeIgniter\Database\MySQLi\Result->fetchObject('App\\Entities\\ConsultaOnline')
+ 3 SYSTEMPATH\Database\BaseResult.php(106): CodeIgniter\Database\BaseResult->getCustomResultObject('App\\Entities\\ConsultaOnline')
+ 4 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseResult->getResult('App\\Entities\\ConsultaOnline')
+ 5 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(2, 0)
+ 6 APPPATH\Views\consulta\detail_patient.php(10): CodeIgniter\BaseModel->findAll(2)
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\consulta\\detail_patient.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/consulta/detail_patient.php', [], true)
+10 APPPATH\Controllers\ConsultaController.php(19): view('/consulta/detail_patient.php', [...])
+11 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ConsultaController->detalhar('2')
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 23:48:15 --> Attempt to read property "CNS_DATA" on array
+in APPPATH\Views\consulta\detail_patient.php on line 122.
+ 1 APPPATH\Views\consulta\detail_patient.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "CNS_DATA" on array', 'APPPATH\\Views\\consulta\\detail_patient.php', 122)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\consulta\\detail_patient.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/consulta/detail_patient.php', [], true)
+ 5 APPPATH\Controllers\ConsultaController.php(19): view('/consulta/detail_patient.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ConsultaController->detalhar('2')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 23:49:00 --> Undefined variable $agendamento
+in APPPATH\Views\consulta\detail_patient.php on line 225.
+ 1 APPPATH\Views\consulta\detail_patient.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $agendamento', 'APPPATH\\Views\\consulta\\detail_patient.php', 225)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\consulta\\detail_patient.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/consulta/detail_patient.php', [], true)
+ 5 APPPATH\Controllers\ConsultaController.php(19): view('/consulta/detail_patient.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ConsultaController->detalhar('2')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

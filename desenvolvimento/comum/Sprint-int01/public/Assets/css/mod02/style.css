@@ -1,0 +1,13 @@
+.div-bt-red-atend{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bt-red-atend{
+    margin: 0;
+}
+
+.appointment-btn{
+    border: 0px;
+}
